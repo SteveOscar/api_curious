@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/auth/instagram', as: :login
+  get '/auth/twitter', as: :login
 
   get  '/dashboard', to: 'dashboard#show'
   root 'home#show'
