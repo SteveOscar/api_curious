@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(version: 20160216200316) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
+    t.string   "uid"
+    t.string   "bio"
+    t.string   "image_url"
+    t.string   "token"
+    t.string   "provider"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
