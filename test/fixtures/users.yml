@@ -1,10 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-carl:
-  name: carl
+steven:
+  name: Steven Olson
   provider: twitter
-  uid: 12345
-  bio: Angry neighor with inflatable pool
-  image_url: http://pbs.twimg.com/profile_images/676288331215335424/xFUgQmzk_normal.jpg
+  uid: 3767014753
+  bio: Current Turing student, photographer, traveler, former commercial fisherman. Life-long cereal enthusiast.
+  image_url: http://pbs.twimg.com/profile_images/676288331215335424/xFUgQmzk.jpg
   token: 3767014753-pzD4G6hhmyH0dHEBNODBJrQqhYHbG0WCl2QRxEc
   secret: uFPYL5mO17PK5IDtBvvEVRH1H5YmC99XF2eGlmoJmTRUE

@@ -5,14 +5,16 @@ require "capybara/rails"
 require 'minitest/pride'
 require 'webmock'
 require 'vcr'
+require "minitest-vcr"
 
 class ActiveSupport::TestCase
+
 
   OmniAuth.config.test_mode = true
   omniauth_hash = { 'provider' => 'twitter',
                     'uid' => '12345',
                     'info' => {
-                        'name' => 'carl',
+                        'name' => 'Steven Olson',
                         'description' => 'Angry neighor with inflatable pool',
                         'image' => 'http://pbs.twimg.com/profile_images/676288331215335424/xFUgQmzk_normal.jpg'
                     },
@@ -27,18 +29,25 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  # VCR config
   VCR.configure do |config|
     config.cassette_library_dir = 'test/cassettes'
     config.hook_into :webmock
   end
+  MinitestVcr::Spec.configure!
+
 end
 
 module ActionDispatch
   class IntegrationTest
     include Capybara::DSL
 
+    def setup
+      VCR.insert_cassette name
+    end
+
     def teardown
+      VCR.eject_cassette
       reset_session!
     end
   end

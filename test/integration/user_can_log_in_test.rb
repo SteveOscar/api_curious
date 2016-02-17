@@ -12,7 +12,7 @@ class UserCanLogInTest < ActionDispatch::IntegrationTest
     click_on "Login with Twitter"
 
     assert_equal "/dashboard", current_path
-    assert page.has_content?('Hi, carl')
+    assert page.has_content?('Hi, Steven Olson')
   end
 
 end

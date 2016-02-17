@@ -28,6 +28,7 @@ end
 
 group :test do
   gem 'vcr'
+  gem "minitest-vcr"
   gem 'webmock'
   gem 'guard', '~> 2.13'
   gem 'minitest-rails'
