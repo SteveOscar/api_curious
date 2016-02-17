@@ -24,8 +24,10 @@ $(document).ready(function(){
   $('.fades3').delay( 1200 ).fadeTo('slow', 1);
   $('.circle-go').delay( 1000 ).fadeTo('slow', 0);
   $('.circle-come').delay( 1000 ).fadeTo('slow', 1);
-  $('.circle2').delay( 1200 ).fadeTo('slow', 1);
-  $('.circle3').delay( 1400 ).fadeTo('slow', 1);
+  $('.circle2').delay( 1200 ).fadeTo('slow', 0.9);
+  $('.circle3').delay( 1400 ).fadeTo('slow', 0.9);
+  $('.hi').delay( 1400 ).fadeTo('slow', 0);
+  $('.bio').delay( 1800 ).fadeTo('slow', 0);
 
   $("#scroller").simplyScroll({
     customClass: 'vert',

@@ -11,7 +11,7 @@ body {
 .container-home {
   background-color: #1B3C59;
   min-height: 100vh;
-  padding-top: 18vh;
+  padding-top: 160px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@ h2.home {
    position:absolute;
    left:0;
    right:0;
-   top: 10%;
+   top: 80px;
    margin-left:auto;
    margin-right:auto;
 }
@@ -52,7 +52,7 @@ h2.home {
    position:absolute;
    left:0;
    right:0;
-   top:10%;
+   top:80px;
    margin-left:auto;
    margin-right:auto;
    opacity: 0;
@@ -63,9 +63,9 @@ h2.home {
    background: white;
    border-radius: 100px;
    position:absolute;
-   left:0;
+   left:10px;
    right:0;
-   top:50%;
+   top:470px;
    margin-left:auto;
    margin-right:auto;
    opacity: 0;
@@ -76,9 +76,9 @@ h2.home {
    background: #F8BB44;
    border-radius: 50px;
    position:absolute;
-   left:0;
+   left:15px;
    right:0;
-   top:70%;
+   top:640px;
    margin-left:auto;
    margin-right:auto;
    opacity: 0;
@@ -98,7 +98,9 @@ a.btn.btn-lg.btn-default.btn-home:hover {
 }
 
 img.img-circle.img-thumbnail.home-image {
-  height: 200px;
+  width: 20%;
+  max-width: 200px;
+  min-width: 100px;
 }
 
 // TWEETS

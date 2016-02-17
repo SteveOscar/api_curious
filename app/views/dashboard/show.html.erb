@@ -1,11 +1,11 @@
-<%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home", method: :delete %>
-<%= link_to "Your Posts", posts_path, class: "btn btn-lg btn-default btn-home" %>
-<%= link_to "Timeline", "/logout", class: "btn btn-lg btn-default btn-home", method: :delete %>
-<div class="container-fluid container-home">
+<%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image fades1" %>
+<%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home fades2", method: :delete %>
+<%= link_to "Your Posts", posts_path, class: "btn btn-lg btn-default btn-home fades3" %>
+<%= link_to "Timeline", "/logout", class: "btn btn-lg btn-default btn-home fades3", method: :delete %>
 
+<div class="container-fluid container">
   <div class="col-md-8">
-    <h1 class="home">Hi, <%= current_user.name %></h1>
-    <%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %>
-    <h2 class="home"> <%= current_user.bio %> </h2>
+    <h1 class="home hi">Hi, <%= current_user.name %></h1>
+    <h2 class="home bio"> <%= current_user.bio %> </h2>
   </div>
 </div>
