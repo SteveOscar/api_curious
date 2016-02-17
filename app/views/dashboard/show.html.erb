@@ -4,8 +4,19 @@
 <%= link_to "Timeline", "/logout", class: "btn btn-lg btn-default btn-home fades3", method: :delete %>
 
 <div class="container-fluid container">
-  <div class="col-md-8">
+  <div class="col-md-8 intro">
     <h1 class="home hi">Hi, <%= current_user.name %></h1>
     <h2 class="home bio"> <%= current_user.bio %> </h2>
   </div>
+</div>
+
+<div class="pillar container">
+  <div class="header">
+    <h2>Your Feed</h2>
+  </div>
+  <% @feed.each do |tweet| %>
+    <div class="row tweet-card">
+      <span> <%= tweet.text %> </span>
+    </div>
+  <% end %>
 </div>

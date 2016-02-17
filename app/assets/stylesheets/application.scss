@@ -21,11 +21,11 @@ body {
   font-size: 100;
 }
 
-h1.home {
+h1 {
   font-size: 60px;
   color: #F8BB44;
 }
-h2.home {
+h2 {
   color: #5A5A8E
 }
 
@@ -112,4 +112,22 @@ li.tweet {
   color: white;
   font-weight: 100;
   font-size: 60;
+}
+
+// DASHBOARD
+.intro {
+  position: absolute;
+}
+.tweet-card {
+  margin: 20px;
+  padding: 20px;
+  border-color: #C7FF0E;
+  width: 400px;
+  background-color: white;
+  opacity: .8;
+  border-width: 2px;
+  border-style: solid;
+}
+.pillar {
+  width: 500px;
 }

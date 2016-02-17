@@ -18,4 +18,18 @@ class ApplicationController < ActionController::Base
     end
     tweets
   end
+
+  def user_feed
+    t = TwitterService.new(current_user)
+    results = t.client.home_timeline
+    tweets = []
+    results.each do |tweet, i|
+      tweets << tweet
+    end
+    tweets
+  end
+
+  def tweet_card_data(tweet)
+
+  end
 end
