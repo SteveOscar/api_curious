@@ -83,7 +83,9 @@ h2.home {
    margin-right:auto;
    opacity: 0;
 }
-
+a.btn.btn-lg.btn-default.btn-home.disabled {
+  opacity: .5;
+}
 a.btn.btn-lg.btn-default.btn-home {
   background-color: transparent;
   border-width: 4px;
@@ -94,7 +96,7 @@ a.btn.btn-lg.btn-default.btn-home {
 }
 
 a.btn.btn-lg.btn-default.btn-home:hover {
-  background-color: black;
+  background-color: #1B3C59;
 }
 
 img.img-circle.img-thumbnail.home-image {
@@ -113,11 +115,6 @@ li.tweet {
   font-weight: 100;
   font-size: 60;
 }
-
-// DASHBOARD
-.intro {
-  position: absolute;
-}
 .tweet-card {
   margin: 20px;
   padding: 20px;
@@ -128,7 +125,33 @@ li.tweet {
   border-width: 2px;
   border-style: solid;
 }
+
+// DASHBOARD
+.intro {
+  position: absolute;
+}
+.header {
+  color: #F8BB44;
+  opacity: .85;
+}
 .pillar {
   width: 500px;
   opacity: 0;
+}
+a.btn.btn-lg.btn-default.btn-dash {
+  background-color: transparent;
+  border-width: 3px;
+  color: #F8BB44;
+  font-weight: 200;
+  border-color: white;
+  margin: 8px;
+}
+
+a.btn.btn-lg.btn-default.btn-dash:hover {
+  background-color: white;
+  border-width: 3px;
+  color: #1B3C59;
+  font-weight: 200;
+  border-color: transparent;
+  margin: 8px;
 }

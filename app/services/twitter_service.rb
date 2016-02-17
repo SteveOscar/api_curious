@@ -40,4 +40,13 @@ class TwitterService
     end
     tweets
   end
+
+  def retweeted
+    results = client.retweets_of_me
+    tweets = []
+    results.each do |tweet, i|
+      tweets << tweet
+    end
+    tweets
+  end
 end

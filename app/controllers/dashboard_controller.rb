@@ -11,4 +11,8 @@ class DashboardController < ApplicationController
   def mentions
     @feed = TwitterService.new(current_user).user_mentions
   end
+
+  def retweeted
+    @feed = TwitterService.new(current_user).retweeted
+  end
 end
