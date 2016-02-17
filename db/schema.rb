@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160216200316) do
     t.string   "bio"
     t.string   "image_url"
     t.string   "token"
+    t.string   "secret"
     t.string   "provider"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

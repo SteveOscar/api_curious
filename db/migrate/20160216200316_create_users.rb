@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :bio
       t.string :image_url
       t.string :token
+      t.string :secret
       t.string :provider
 
       t.timestamps null: false

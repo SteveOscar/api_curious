@@ -1,28 +1,17 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
-
-
- */
-
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "custom";
+@import "simplyscroll";
+
+body {
+  background-color: #1B3C59
+}
 
 .container-home {
   background-color: #1B3C59;
-  min-height: 100vh;
-  padding-top: 30vh;
+  min-height: 90vh;
+  padding-top: 17vh;
   text-align: center;
 }
 
@@ -36,20 +25,133 @@ h1.home {
   font-size: 60px;
   color: #F8BB44;
 }
+h2.home {
+  color: #5A5A8E
+}
 
+.fades1, .fades2, .fades3 {
+  opacity: 0;
+}
+.circle-go {
+   width: 60vh;
+   height: 60vh;
+   background: #F8BB44;
+   border-radius: 30vh;
+   position:absolute;
+   left:0;
+   right:0;
+   top: 10vh;
+   margin-left:auto;
+   margin-right:auto;
+}
+.circle-come {
+   width: 60vh;
+   height: 60vh;
+   background: #5A5A8E;
+   border-radius: 30vh;
+   position:absolute;
+   left:0;
+   right:0;
+   top:10vh;
+   margin-left:auto;
+   margin-right:auto;
+   opacity: 0;
+}
+.circle2 {
+   width: 15vh;
+   height: 15vh;
+   background: white;
+   border-radius: 8vh;
+   position:absolute;
+   left:12px;
+   right:0;
+   top:65vh;
+   margin-left:auto;
+   margin-right:auto;
+   opacity: 0;
+}
+.circle3 {
+   width: 9vh;
+   height: 9vh;
+   background: #F8BB44;
+   border-radius: 8vh;
+   position:absolute;
+   left:19px;
+   right:0;
+   top:78vh;
+   margin-left:auto;
+   margin-right:auto;
+   opacity: 0;
+}
+a.btn.btn-lg.btn-default.btn-home.disabled {
+  opacity: .5;
+}
 a.btn.btn-lg.btn-default.btn-home {
   background-color: transparent;
-  border-width: 2px;
-  color: #60BFBF;
+  border-width: 4px;
+  color: #F8BB44;
   font-weight: 100;
-  border-color: #60BFBF;
+  border-color: #F8BB44;
   margin-top: 20px;
 }
 
 a.btn.btn-lg.btn-default.btn-home:hover {
-  opacity: 0.4;
+  background-color: #1B3C59;
 }
 
 img.img-circle.img-thumbnail.home-image {
-  height: 200px;
+  width: 20%;
+  max-width: 200px;
+  min-width: 100px;
+}
+
+// TWEETS
+.ticker {
+  max-width: 600px;
+  overflow-y: auto;
+}
+li.tweet {
+  color: white;
+  font-weight: 100;
+  font-size: 60;
+}
+.tweet-card {
+  margin: 20px;
+  padding: 20px;
+  border-color: #C7FF0E;
+  width: 400px;
+  background-color: white;
+  opacity: .8;
+  border-width: 2px;
+  border-style: solid;
+}
+
+// DASHBOARD
+.intro {
+  position: absolute;
+}
+.header {
+  color: #F8BB44;
+  opacity: .85;
+}
+.pillar {
+  width: 500px;
+  opacity: 0;
+}
+a.btn.btn-lg.btn-default.btn-dash {
+  background-color: transparent;
+  border-width: 3px;
+  color: #F8BB44;
+  font-weight: 200;
+  border-color: white;
+  margin: 8px;
+}
+
+a.btn.btn-lg.btn-default.btn-dash:hover {
+  background-color: white;
+  border-width: 3px;
+  color: #1B3C59;
+  font-weight: 200;
+  border-color: transparent;
+  margin: 8px;
 }

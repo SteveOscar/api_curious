@@ -1,0 +1,23 @@
+<%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %>
+<%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home fades2", method: :delete %>
+<!-- <%= link_to "Your Posts", posts_path, class: "btn btn-lg btn-default btn-home fades3" %> -->
+<%= link_to "Timeline", "/feed", class: "btn btn-lg btn-default btn-home fades3" %>
+<%= link_to "Home", dashboard_path, class: "btn btn-lg btn-default btn-home fades1" %>
+
+<div class="container-fluid container">
+  <div class="col-md-8 intro">
+    <h1 class="home hi">The little songs</h1>
+    <h2 class="home bio">you have recently sung to the world...</h2>
+  </div>
+</div>
+
+<div class="pillar container">
+  <div class="header">
+    <h2>Your Tweets</h2>
+  </div>
+  <% @tweets.each do |tweet| %>
+    <div class="row tweet-card">
+      <span> <%= tweet %> </span>
+    </div>
+  <% end %>
+</div>
