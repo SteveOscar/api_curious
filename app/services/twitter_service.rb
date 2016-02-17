@@ -13,4 +13,22 @@ class TwitterService
   def tweet(content)
     client.update(content, options={})
   end
+
+  def user_tweets
+    results = client.user_timeline[0..19]
+    tweets = []
+    results.each do |tweet, i|
+      tweets << tweet.text
+    end
+    tweets
+  end
+
+  def user_feed
+    results = client.home_timeline
+    tweets = []
+    results.each do |tweet, i|
+      tweets << tweet
+    end
+    tweets
+  end
 end

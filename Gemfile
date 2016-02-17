@@ -12,16 +12,23 @@ gem 'pg'
 gem 'omniauth-twitter'
 gem 'twitter'
 gem 'simplyscroll-rails'
+gem 'hurley'
 
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
   gem 'launchy'
   gem 'database_cleaner'
+  gem 'faraday'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'quiet_assets'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end

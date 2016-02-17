@@ -27,7 +27,8 @@ $(document).ready(function(){
   $('.circle2').delay( 1200 ).fadeTo('slow', 0.9);
   $('.circle3').delay( 1400 ).fadeTo('slow', 0.9);
   $('.hi').delay( 1400 ).fadeTo('slow', 0);
-  $('.bio').delay( 1800 ).fadeTo('slow', 0);
+  $('.bio').delay( 2200 ).fadeTo('slow', 0);
+  $('.pillar').delay( 2400 ).fadeTo('slow', 1);
 
   $("#scroller").simplyScroll({
     customClass: 'vert',

@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
   def index
-    @tweets = user_tweets
+    @tweets = TwitterService.new(current_user).user_tweets
   end
 end
