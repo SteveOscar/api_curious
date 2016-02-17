@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  get '/posts', to: 'posts#index'
   get '/auth/twitter', as: :login
 
   get  '/dashboard', to: 'dashboard#show'

@@ -14,3 +14,23 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap-sprockets
+//= require jquery.simplyscroll
+
+
+$(document).ready(function(){
+
+  $('.fades1').delay( 200 ).fadeTo('slow', 1);
+  $('.fades2').delay( 700 ).fadeTo('slow', 1);
+  $('.fades3').delay( 1200 ).fadeTo('slow', 1);
+  $('.circle-go').delay( 1000 ).fadeTo('slow', 0);
+  $('.circle-come').delay( 1000 ).fadeTo('slow', 1);
+  $('.circle2').delay( 1200 ).fadeTo('slow', 1);
+  $('.circle3').delay( 1400 ).fadeTo('slow', 1);
+
+  $("#scroller").simplyScroll({
+    customClass: 'vert',
+    orientation: 'vertical',
+    direction: 'backwards',
+    frameRate: 25
+  });
+});

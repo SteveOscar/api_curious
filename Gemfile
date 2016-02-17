@@ -11,6 +11,7 @@ gem 'figaro'
 gem 'pg'
 gem 'omniauth-twitter'
 gem 'twitter'
+gem 'simplyscroll-rails'
 
 group :development, :test do
   gem 'byebug'
