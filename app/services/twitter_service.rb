@@ -31,4 +31,13 @@ class TwitterService
     end
     tweets
   end
+
+  def user_mentions
+    results = client.mentions_timeline
+    tweets = []
+    results.each do |tweet, i|
+      tweets << tweet
+    end
+    tweets
+  end
 end

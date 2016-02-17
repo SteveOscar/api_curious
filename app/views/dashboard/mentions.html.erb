@@ -1,0 +1,22 @@
+<%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %>
+<%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home", method: :delete %>
+<%= link_to "Your Posts", posts_path, class: "btn btn-lg btn-default btn-home" %>
+<%= link_to "Timeline", "/feed", class: "btn btn-lg btn-default btn-home" %>
+
+<div class="container-fluid container">
+  <div class="col-md-8 intro">
+    <h1 class="home hi">Other Birds</h1>
+    <h2 class="home bio">Singin 'bout you...</h2>
+  </div>
+</div>
+
+<div class="pillar container">
+  <div class="header">
+    <h2>Mentions</h2>
+  </div>
+  <% @feed.each do |tweet| %>
+    <div class="row tweet-card">
+      <span> <%= tweet.text %> <br> - <%= tweet.user.name %> </span>
+    </div>
+  <% end %>
+</div>

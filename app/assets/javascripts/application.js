@@ -26,8 +26,15 @@ $(document).ready(function(){
   $('.circle-come').delay( 1000 ).fadeTo('slow', 1);
   $('.circle2').delay( 1200 ).fadeTo('slow', 0.9);
   $('.circle3').delay( 1400 ).fadeTo('slow', 0.9);
-  $('.hi').delay( 1400 ).fadeTo('slow', 0);
-  $('.bio').delay( 2200 ).fadeTo('slow', 0);
+
+  $('.hi').delay( 2200 ).fadeTo('slow', 0, function(){
+    $('.hi').remove();
+  });
+
+  $('.bio').delay( 2000 ).fadeTo('slow', 0, function(){
+    $('.bio').remove();
+  });
+  
   $('.pillar').delay( 2400 ).fadeTo('slow', 1);
 
   $("#scroller").simplyScroll({

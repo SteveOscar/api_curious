@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'mentions', to: 'dashboard#mentions'
+  get '/feed', to: 'dashboard#feed'
   get '/posts', to: 'posts#index'
   get '/auth/twitter', as: :login
 
