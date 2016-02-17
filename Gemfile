@@ -18,8 +18,6 @@ group :development, :test do
   gem 'byebug'
   gem 'capybara'
   gem 'launchy'
-  gem 'database_cleaner'
-  gem 'faraday'
 end
 
 group :development do
@@ -31,4 +29,6 @@ end
 group :test do
   gem 'vcr'
   gem 'webmock'
+  gem 'guard', '~> 2.13'
+  gem 'minitest-rails'
 end
