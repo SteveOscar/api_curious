@@ -1,3 +1,4 @@
+<%= image_tag('bird.png', class: "bird") %>
 <%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %>
 <%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home fades1", method: :delete %>
 <%= link_to "Dashboard", dashboard_path, class: "btn btn-lg btn-default btn-home fades2" %>
@@ -10,8 +11,8 @@
 </div>
 
 <div class="pillar container">
-  <div class="header">
-    <h2>Mentions</h2>
+  <div>
+    <h2 class="header home">Mentions</h2>
   </div>
   <% @feed.each do |tweet| %>
     <div class="row tweet-card">

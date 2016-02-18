@@ -24,25 +24,14 @@ class TwitterService
   end
 
   def user_feed
-    results = client.home_timeline
-    gather_tweets(results)
+    client.home_timeline
   end
 
   def user_mentions
-    results = client.mentions_timeline
-    gather_tweets(results)
+    client.mentions_timeline
   end
 
   def retweeted
-    results = client.retweets_of_me
-    gather_tweets(results)
-  end
-
-  def gather_tweets(results)
-    tweets = []
-    results.each do |tweet, i|
-      tweets << tweet
-    end
-    tweets
+    client.retweets_of_me
   end
 end
