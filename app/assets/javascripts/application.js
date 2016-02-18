@@ -48,4 +48,9 @@ $(document).ready(function(){
     direction: 'backwards',
     frameRate: 25
   });
+
+  $('.retweet').click(function() {
+      $(this).hide();
+  });
+
 });

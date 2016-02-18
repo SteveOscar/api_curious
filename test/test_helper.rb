@@ -37,14 +37,6 @@ class ActiveSupport::TestCase
   end
   MinitestVcr::Spec.configure!
 
-  # def setup
-  #   VCR.insert_cassette name
-  # end
-  #
-  # def teardown
-  #   VCR.eject_cassette
-  # end
-
 end
 
 module ActionDispatch
