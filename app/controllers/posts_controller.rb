@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  respond_to :html, :js
 
   def index
     @tweets = TwitterService.new(current_user).user_tweets

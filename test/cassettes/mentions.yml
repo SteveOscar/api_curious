@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/mentions_timeline.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.16.0
+      Authorization:
+      - OAuth oauth_consumer_key="CvmUuSJHUj9yAALQILJotUejB", oauth_nonce="ddfb2f4b70bab3576054d16d622c90b9",
+        oauth_signature="ugQiQbGT3sF7RIuoSnkp4luuI90%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1455813078", oauth_token="3767014753-pzD4G6hhmyH0dHEBNODBJrQqhYHbG0WCl2QRxEc",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1879'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 18 Feb 2016 16:31:19 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 18 Feb 2016 16:31:19 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145581307919649464; Domain=.twitter.com; Path=/; Expires=Sat,
+        17-Feb-2018 16:31:19 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 41e6b4a9510af498ec12593953a5eb6c
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1455813979'
+      X-Response-Time:
+      - '35'
+      X-Transaction:
+      - 3334d28283643ec2
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"created_at":"Thu Feb 11 05:05:49 +0000 2016","id":697647706001403905,"id_str":"697647706001403905","text":"@oSteveOscar
+        IM A TRANSPLANT WHAT OF IT","source":"\u003ca href=\"http:\/\/tapbots.com\/software\/tweetbot\/mac\"
+        rel=\"nofollow\"\u003eTweetbot for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":697647288512950272,"in_reply_to_status_id_str":"697647288512950272","in_reply_to_user_id":3767014753,"in_reply_to_user_id_str":"3767014753","in_reply_to_screen_name":"oSteveOscar","user":{"id":7899342,"id_str":"7899342","name":"Mike
+        Dao","screen_name":"mikedao","location":"Carmen Sandiego","description":"Teacher
+        at @turingschool. Cyclist. Pizza Core Team Member. There is nothing cooler
+        than being proud of the things you love. :wq","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":1449,"friends_count":195,"listed_count":59,"created_at":"Thu
+        Aug 02 04:28:44 +0000 2007","favourites_count":96,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":51611,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/639481151422201856\/L_i0v5bd_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/639481151422201856\/L_i0v5bd_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/7899342\/1393989709","profile_link_color":"3B94D9","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"oSteveOscar","name":"Steven
+        Olson","id":3767014753,"id_str":"3767014753","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 26 01:35:51 +0000 2016","id":691796660624703488,"id_str":"691796660624703488","text":"@oSteveOscar
+        Same here!","source":"\u003ca href=\"http:\/\/twitter.com\/download\/android\"
+        rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":691796537333190657,"in_reply_to_status_id_str":"691796537333190657","in_reply_to_user_id":3767014753,"in_reply_to_user_id_str":"3767014753","in_reply_to_screen_name":"oSteveOscar","user":{"id":324734367,"id_str":"324734367","name":"Julian
+        Feliciano","screen_name":"julsfelic","location":"Denver, CO","description":"Student
+        at @TuringSchool. If it isn''t code, then it''s vintage watches, vintage cars
+        and current social issues.","url":"https:\/\/t.co\/z48FOvza5D","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/z48FOvza5D","expanded_url":"http:\/\/julsfelic.github.com","display_url":"julsfelic.github.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":130,"friends_count":271,"listed_count":7,"created_at":"Mon
+        Jun 27 03:53:22 +0000 2011","favourites_count":1013,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":921,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"0F0A02","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/453264828165922816\/L8oshe4v.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/453264828165922816\/L8oshe4v.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/453259067566215168\/5j7pB2Bm_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/453259067566215168\/5j7pB2Bm_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/324734367\/1396900693","profile_link_color":"3B94D9","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"171106","profile_text_color":"8A7302","profile_use_background_image":true,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"oSteveOscar","name":"Steven
+        Olson","id":3767014753,"id_str":"3767014753","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Sat
+        Oct 31 15:55:11 +0000 2015","id":660485172886810624,"id_str":"660485172886810624","text":"@oSteveOscar","source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":3767014753,"in_reply_to_user_id_str":"3767014753","in_reply_to_screen_name":"oSteveOscar","user":{"id":2264729174,"id_str":"2264729174","name":"Marya","screen_name":"5cherrydarling5","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":51,"listed_count":0,"created_at":"Fri
+        Dec 27 18:13:44 +0000 2013","favourites_count":1107,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":595,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/472880349379190784\/9nKG-_Aj_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/472880349379190784\/9nKG-_Aj_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2264729174\/1445921314","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"oSteveOscar","name":"Steven
+        Olson","id":3767014753,"id_str":"3767014753","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"und"},{"created_at":"Thu
+        Oct 08 00:42:26 +0000 2015","id":651920554379776000,"id_str":"651920554379776000","text":"@oSteveOscar
+        yes. This is one of my fav pictures ever 5\u20e35\u20e3","source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":651879050558894080,"in_reply_to_status_id_str":"651879050558894080","in_reply_to_user_id":3767014753,"in_reply_to_user_id_str":"3767014753","in_reply_to_screen_name":"oSteveOscar","user":{"id":2264729174,"id_str":"2264729174","name":"Marya","screen_name":"5cherrydarling5","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":42,"friends_count":51,"listed_count":0,"created_at":"Fri
+        Dec 27 18:13:44 +0000 2013","favourites_count":1107,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":595,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/472880349379190784\/9nKG-_Aj_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/472880349379190784\/9nKG-_Aj_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2264729174\/1445921314","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"oSteveOscar","name":"Steven
+        Olson","id":3767014753,"id_str":"3767014753","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}]'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 16:31:19 GMT
+recorded_with: VCR 3.0.1

@@ -33,8 +33,17 @@ class ActiveSupport::TestCase
   VCR.configure do |config|
     config.cassette_library_dir = 'test/cassettes'
     config.hook_into :webmock
+    config.allow_http_connections_when_no_cassette = true
   end
   MinitestVcr::Spec.configure!
+
+  # def setup
+  #   VCR.insert_cassette name
+  # end
+  #
+  # def teardown
+  #   VCR.eject_cassette
+  # end
 
 end
 
@@ -42,12 +51,7 @@ module ActionDispatch
   class IntegrationTest
     include Capybara::DSL
 
-    def setup
-      VCR.insert_cassette name
-    end
-
     def teardown
-      VCR.eject_cassette
       reset_session!
     end
   end
