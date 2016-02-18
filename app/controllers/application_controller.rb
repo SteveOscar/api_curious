@@ -13,27 +13,4 @@ class ApplicationController < ActionController::Base
     data["quoted_status"]["user"]["profile_image_url"]
   end
 
-  # def user_tweets
-  #   t = TwitterService.new(current_user)
-  #   results = t.client.user_timeline[0..19]
-  #   tweets = []
-  #   results.each do |tweet, i|
-  #     tweets << tweet.text
-  #   end
-  #   tweets
-  # end
-
-  # def user_feed
-  #   t = TwitterService.new(current_user)
-  #   results = t.client.home_timeline
-  #   tweets = []
-  #   results.each do |tweet, i|
-  #     tweets << tweet
-  #   end
-  #   tweets
-  # end
-
-  def tweet_card_data(tweet)
-
-  end
 end

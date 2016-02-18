@@ -33,4 +33,6 @@ group :test do
   gem 'webmock'
   gem 'guard', '~> 2.13'
   gem 'minitest-rails'
+  gem 'simplecov', :require => false
+  gem 'mocha'
 end

@@ -1,3 +1,6 @@
+require "simplecov"
+SimpleCov.start "rails"
+
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
@@ -6,6 +9,7 @@ require 'minitest/pride'
 require 'webmock'
 require 'vcr'
 require "minitest-vcr"
+require 'mocha/mini_test'
 
 class ActiveSupport::TestCase
 

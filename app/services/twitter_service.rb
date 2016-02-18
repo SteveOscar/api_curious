@@ -15,12 +15,7 @@ class TwitterService
   end
 
   def user_tweets
-    results = client.user_timeline[0..19]
-    tweets = []
-    results.each do |tweet, i|
-      tweets << tweet.text
-    end
-    tweets
+    client.user_timeline[0..19]
   end
 
   def user_feed
@@ -44,6 +39,10 @@ class TwitterService
   end
 
   def retweet(tweet)
-    client.retweet!(tweet)
+    client.retweet(tweet)
   end
+
+  # def retweets_of(id)
+  #   client.retweets(id)
+  # end
 end

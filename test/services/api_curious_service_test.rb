@@ -1,6 +1,14 @@
 require 'test_helper'
 
 class ApiCuriousServiceTest < ActiveSupport::TestCase
+  test 'initialization' do
+    VCR.use_cassette('example') do
+      steven = users(:steven)
+      user = TwitterService.new(steven)
+      assert user
+    end
+  end
+
   test '#tweets' do
     VCR.use_cassette('example') do
       steven = users(:steven)
@@ -35,38 +43,38 @@ class ApiCuriousServiceTest < ActiveSupport::TestCase
       end
     end
 
-    test '#retweets' do
-      VCR.use_cassette('retweets') do
-        steven = users(:steven)
-        user = TwitterService.new(steven)
-        retweets = user.retweeted
+  test '#retweets' do
+    VCR.use_cassette('retweets') do
+      steven = users(:steven)
+      user = TwitterService.new(steven)
+      retweets = user.retweeted
 
-        refute retweets.nil?
-        assert retweets.first.text
-      end
+      refute retweets.nil?
+      assert retweets.first.text
     end
+  end
 
-    test '#followers' do
-      VCR.use_cassette('followers') do
-        steven = users(:steven)
-        user = TwitterService.new(steven)
-        followers = user.followers
+  test '#followers' do
+    VCR.use_cassette('followers') do
+      steven = users(:steven)
+      user = TwitterService.new(steven)
+      followers = user.followers
 
-        refute followers.nil?
-        assert followers.first.name
-      end
+      refute followers.nil?
+      assert followers.first.name
     end
+  end
 
-    test '#friends' do
-      VCR.use_cassette('friends') do
-        steven = users(:steven)
-        user = TwitterService.new(steven)
-        friends = user.friends
+  test '#friends' do
+    VCR.use_cassette('friends') do
+      steven = users(:steven)
+      user = TwitterService.new(steven)
+      friends = user.friends
 
-        refute friends.nil?
-        assert friends.first.name
-      end
+      refute friends.nil?
+      assert friends.first.name
     end
+  end
 
 
 end

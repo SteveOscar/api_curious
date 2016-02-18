@@ -51,6 +51,7 @@ $(document).ready(function(){
 
   $('.retweet').click(function() {
       $(this).hide();
+      $(".retweeted").show();
   });
 
 });

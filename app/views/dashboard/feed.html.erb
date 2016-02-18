@@ -24,7 +24,7 @@
       - <%= tweet.user.name %>  </span>
       <!-- <%= link_to "Like", dashboard_path, class: "btn btn-lg btn-default btn-home fades2" %> -->
       <%= button_to "Retweet", posts_retweet_path(id: tweet.id), :remote => true, class: "btn btn-lg btn-default btn-home retweet" %>
-      <%= button_to "un-Retweet", posts_retweet_path(id: tweet.id), :remote => true, class: "btn btn-lg btn-default btn-home retweeted", style: "display:none" %>
+      <!-- <%= button_to "un-Retweet", posts_retweet_path(id: tweet.id), :remote => true, class: "btn btn-lg btn-default btn-home retweeted", style: "display:none" %> -->
     </div>
   <% end %>
 
