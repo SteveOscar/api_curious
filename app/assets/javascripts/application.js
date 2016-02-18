@@ -19,7 +19,7 @@
 
 $(document).ready(function(){
 
-  // Fades for the navbar and splash page
+  // Fades for the navbar, splash page and background
   $('.fades1').delay( 200 ).fadeTo('slow', 1);
   $('.fades2').delay( 700 ).fadeTo('slow', 1);
   $('.fades3').delay( 1200 ).fadeTo('slow', 1);
@@ -29,14 +29,10 @@ $(document).ready(function(){
   $('.circle2').delay( 1200 ).fadeTo('slow', 0.6);
   $('.circle3').delay( 1400 ).fadeTo('slow', 0.7);
 
-  // Fades out the name and bio on the dashboard
+  // Fades in/out the name and bio on the dashboard
   $('.hi').delay( 1300 ).fadeTo('slow', 0, function(){
     $('.hi').remove();
   });
-
-  // $('.bio').delay( 800 ).fadeTo('slow', 1, function(){
-  //   $('.bio').animate({fontSize: "20px"}, 1000)
-  // });
   $('.bio').delay( 2300 ).fadeTo('slow', 1);
 
   $('.blurb').delay( 1800 ).fadeTo('slow', 0, function(){

@@ -34,4 +34,12 @@ class TwitterService
   def retweeted
     client.retweets_of_me
   end
+
+  def followers
+    client.followers
+  end
+
+  def friends
+    client.friends
+  end
 end
