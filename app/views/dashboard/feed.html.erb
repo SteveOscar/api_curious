@@ -20,7 +20,10 @@
 
   <% @feed.each do |tweet| %>
     <div class="row tweet-card">
-      <span> <%= tweet.text %> </span>
+      <span> <%= tweet.text %> <br>
+      - <%= tweet.user.name %>  </span>
+      <!-- <%= link_to "Like", dashboard_path, class: "btn btn-lg btn-default btn-home fades2" %> -->
+      <%= button_to "Retweet", posts_retweet_path(id: tweet.id), class: "btn btn-lg btn-default btn-home fades2" %>
     </div>
   <% end %>
 

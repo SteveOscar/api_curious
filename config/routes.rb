@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
 
+  post '/posts/retweet', to: 'posts#retweet'
   get '/retweeted', to: 'dashboard#retweeted'
   get 'mentions', to: 'dashboard#mentions'
   get '/feed', to: 'dashboard#feed'

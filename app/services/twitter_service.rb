@@ -42,4 +42,8 @@ class TwitterService
   def friends
     client.friends
   end
+
+  def retweet(tweet)
+    client.retweet!(tweet)
+  end
 end

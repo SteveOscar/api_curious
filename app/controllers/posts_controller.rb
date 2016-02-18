@@ -8,4 +8,8 @@ class PostsController < ApplicationController
     TwitterService.new(current_user).tweet(params["q"])
     redirect_to dashboard_path
   end
+
+  def retweet
+    TwitterService.new(current_user).retweet(params[:id])
+  end
 end
