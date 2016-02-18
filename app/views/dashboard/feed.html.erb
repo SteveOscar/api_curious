@@ -2,22 +2,26 @@
 <%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %>
 <%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home fades2", method: :delete %>
 <%= link_to "Dashboard", dashboard_path, class: "btn btn-lg btn-default btn-home fades2" %>
-<%= link_to image_tag('bird.png'), new_post_path %>
 
-<div class="container-fluid container">
-  <div class="col-md-8 intro">
-    <h1 class="home hi">Hi, <%= current_user.name %></h1>
-    <h2 class="home bio"> <%= current_user.bio %> </h2>
-  </div>
+<div class="intro">
+  <h1 class="home hi">Bird, bird, buuurd</h1>
 </div>
-
 <div class="pillar container">
+
+  <div class="container-fluid container">
+    <div class="col-md-8 intro">
+      <h2 class="home bio"> Tweetin' friends... </h2>
+    </div>
+  </div>
+
   <div>
     <h2 class="header home">Your Feed</h2>
   </div>
+
   <% @feed.each do |tweet| %>
     <div class="row tweet-card">
       <span> <%= tweet.text %> </span>
     </div>
   <% end %>
+
 </div>

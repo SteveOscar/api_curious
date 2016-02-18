@@ -137,14 +137,15 @@ li.tweet {
   font-size: 60;
 }
 .tweet-card {
-  margin: 20px;
-  padding: 20px;
-  border-color: #C7FF0E;
-  width: 400px;
-  background-color: white;
-  opacity: .8;
-  border-width: 2px;
-  border-style: solid;
+  margin: 15px;
+  padding: 30px;
+  width: 500px;
+  background-color: rgba(244, 245, 228, 0.88);
+  opacity: .9;
+  border-radius: 15px;
+}
+span{
+  color: black;
 }
 
 // DASHBOARD
