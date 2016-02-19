@@ -6,14 +6,13 @@
 <div class="intro">
   <h1 class="home hi">Bird, bird, buuurd</h1>
 </div>
-<div class="pillar container">
 
+<div class="pillar container">
   <div class="container-fluid container">
     <div class="col-md-8 intro">
       <h2 class="home bio"> Tweetin' friends... </h2>
     </div>
   </div>
-
   <div>
     <h2 class="header home">Your Feed</h2>
   </div>
@@ -23,10 +22,8 @@
       <%= image_tag img_url(tweet), class: "img-circle img-thumbnail tweet-image" %>
       <span> <%= tweet.text %> <br><br>
       <strong>- <%= tweet.user.name %></strong></span>
-      <!-- <%= image_tag('fullheart.png', class: "favorited") %> -->
       <%= link_to(image_tag("fullheart.png"), posts_favorite_path(id: tweet.id), remote: true, class: "favorite", id: "favorite", method: :post) %>
       <%= button_to "Retweet", posts_retweet_path(id: tweet.id), :remote => true, class: "btn btn-lg btn-default btn-home retweet" %>
-      <!-- <%= button_to "un-Retweet", posts_retweet_path(id: tweet.id), :remote => true, class: "btn btn-lg btn-default btn-home retweeted", style: "display:none" %> -->
     </div>
   <% end %>
 

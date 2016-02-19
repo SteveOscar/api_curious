@@ -40,10 +40,10 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
       end
     end
 
-    VCR.use_cassette('favorite') do
+    VCR.use_cassette('like') do
       within('.card1') do
         assert page.has_link?('favorite')
-        click_on 'Retweet'
+        click_on 'favorite'
       end
     end
 
@@ -52,13 +52,24 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
     end
 
     fill_in('q', :with => 'John')
-    click_on 'tweet'
+    click_on 'send-tweet'
 
 
     VCR.use_cassette('mentions') do
       click_on "Mentions"
       assert_equal '/mentions', current_path
       assert page.has_content?("You've been mentioned")
+      assert page.has_css?(".tweet-card")
+    end
+
+    VCR.use_cassette('dashboard') do
+      click_on "Dashboard"
+    end
+
+    VCR.use_cassette('retweets') do
+      click_on "Retweets"
+      assert_equal '/retweeted', current_path
+      assert page.has_content?("Retweets of you")
       assert page.has_css?(".tweet-card")
     end
 
