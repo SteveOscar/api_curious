@@ -16,6 +16,6 @@ class User < ActiveRecord::Base
   end
 
   def self.invalid_attributes?(auth)
-    auth["provider"].nil? || auth["uid"].nil? ? true : false
+    auth["provider"] != 'twitter' || auth["uid"].nil? ? true : false
   end
 end

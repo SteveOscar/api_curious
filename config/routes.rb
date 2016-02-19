@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
 
+  post '/posts/unfollow', to: 'posts#unfollow'
   post '/posts/retweet', to: 'posts#retweet'
   post '/posts/favorite', to: 'posts#favorite'
   get '/retweeted', to: 'dashboard#retweeted'

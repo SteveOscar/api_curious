@@ -33,10 +33,14 @@ $(document).ready(function(){
   // The list of tweets
   $('.pillar').delay( 2100 ).fadeTo('slow', 1);
 
-  // Retweet and like button behavior
+  // Retweet, unfollow, and heart button behavior
   $('.retweet').click(function() {
       $(this).hide();
       $(".retweeted").show();
+  });
+  $('.unfollow').click(function() {
+      $(this).fadeTo('slow', 0).hide();
+
   });
   $('.favorite').click(function() {
       $(this).fadeTo('slow', 1);

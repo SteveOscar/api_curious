@@ -2,9 +2,9 @@ require "test_helper"
 
 class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
 
-  # def setup
-  #   OmniAuth.config.mock_auth[:twitter]
-  # end
+  def setup
+    # OmniAuth.config.mock_auth[:twitter] = nil
+  end
 
   test "a user can log in via twitter omniauth, see data, and post" do
     OmniAuth.config.mock_auth[:twitter]
@@ -48,6 +48,13 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
       end
     end
 
+    VCR.use_cassette('unfollow') do
+      within('.card0') do
+        assert page.has_button?('Unfollow')
+        click_on 'Unfollow'
+      end
+    end
+
     VCR.use_cassette('dashboard') do
       click_on "Dashboard"
     end
@@ -76,9 +83,11 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
 
     click_on "Logout"
     assert_equal root_path, current_path
+
   end
 
   test 'invalid user is redirected' do
+    OmniAuth.config.mock_auth[:twitter] = nil
     OmniAuth.config.mock_auth[:github]
 
     visit root_path

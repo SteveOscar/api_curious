@@ -46,7 +46,7 @@ class TwitterService
     client.favorite!(tweet)
   end
 
-  # def retweets_of(id)
-  #   client.retweets(id)
-  # end
+  def unfollow(user)
+    client.unfollow(user)
+  end
 end
