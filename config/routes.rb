@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
 
+  post '/posts/unfollow', to: 'posts#unfollow'
   post '/posts/retweet', to: 'posts#retweet'
   post '/posts/favorite', to: 'posts#favorite'
   get '/retweeted', to: 'dashboard#retweeted'
@@ -14,4 +15,5 @@ Rails.application.routes.draw do
 
   delete '/logout', to: 'sessions#destroy'
   get '/auth/:provider/callback', to: 'sessions#create'
+  get '/sessiontest', to: 'sessions#create'
 end

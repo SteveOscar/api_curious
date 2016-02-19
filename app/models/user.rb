@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
+  validates_presence_of :provider, :uid, :name
+
   def self.find_or_create_by_auth(auth)
+    return if invalid_attributes?(auth)
     user = User.find_or_create_by(provider: auth['provider'], uid: auth['uid'])
     user.name = auth['info']['name']
     user.bio = auth['info']['description']
@@ -10,5 +13,9 @@ class User < ActiveRecord::Base
     user.save
 
     user
+  end
+
+  def self.invalid_attributes?(auth)
+    auth["provider"] != 'twitter' || auth["uid"].nil? ? true : false
   end
 end
