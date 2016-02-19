@@ -11,25 +11,27 @@ require 'vcr'
 require "minitest-vcr"
 require 'mocha/mini_test'
 
+OmniAuth.config.test_mode = true
+omniauth_hash = { 'provider' => 'twitter',
+                  'uid' => '12345',
+                  'info' => {
+                      'name' => 'Steven Olson',
+                      'description' => 'Angry neighor with inflatable pool',
+                      'image' => 'http://pbs.twimg.com/profile_images/676288331215335424/xFUgQmzk_normal.jpg'
+                  },
+                  'credentials' => {
+                      'token' => ENV['USER_TOKEN'],
+                      'secret' => ENV['USER_SECRET']
+                  }
+}
+
+OmniAuth.config.add_mock(:twitter, omniauth_hash)
+
+invalid_user = { 'provider' => 'github'}
+OmniAuth.config.add_mock(:github, invalid_user)
+
 class ActiveSupport::TestCase
-
-
-  OmniAuth.config.test_mode = true
-  omniauth_hash = { 'provider' => 'twitter',
-                    'uid' => '12345',
-                    'info' => {
-                        'name' => 'Steven Olson',
-                        'description' => 'Angry neighor with inflatable pool',
-                        'image' => 'http://pbs.twimg.com/profile_images/676288331215335424/xFUgQmzk_normal.jpg'
-                    },
-                    'credentials' => {
-                        'token' => ENV['USER_TOKEN'],
-                        'secret' => ENV['USER_SECRET']
-                    }
-  }
-
-  OmniAuth.config.add_mock(:twitter, omniauth_hash)
-
+  include Capybara::DSL
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 

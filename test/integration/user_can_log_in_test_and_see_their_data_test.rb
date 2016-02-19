@@ -8,7 +8,9 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
 
   test "a user can log in via twitter omniauth, see data, and post" do
     visit root_path
-    click_on "Login with Twitter"
+    VCR.use_cassette('dashboard') do
+      click_on "Login with Twitter"
+    end
 
     assert_equal "/dashboard", current_path
     assert page.has_content?('Hi, Steven Olson')
@@ -29,7 +31,13 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
       assert_equal '/feed', current_path
       assert page.has_content?('Your Feed')
       assert page.has_css?(".retweet")
-      click_on ''
+    end
+
+    VCR.use_cassette('retweet') do
+      within('.card1') do
+        assert page.has_button?('Retweet')
+        click_on 'Retweet'
+      end
     end
 
     VCR.use_cassette('dashboard') do

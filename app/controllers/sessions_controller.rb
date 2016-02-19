@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :omniath?, only: [:create]
+
   def new
   end
 
@@ -17,4 +19,9 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
+  private
+
+  def omniath?
+    redirect_to root_path if request.env["omniauth.auth"].nil?
+  end
 end
