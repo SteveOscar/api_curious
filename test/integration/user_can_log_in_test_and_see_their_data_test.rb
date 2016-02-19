@@ -40,10 +40,20 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
       end
     end
 
+    VCR.use_cassette('favorite') do
+      within('.card1') do
+        assert page.has_link?('favorite')
+        click_on 'Retweet'
+      end
+    end
+
     VCR.use_cassette('dashboard') do
       click_on "Dashboard"
-      fill_in('q', :with => 'John')
     end
+
+    fill_in('q', :with => 'John')
+    click_on 'tweet'
+
 
     VCR.use_cassette('mentions') do
       click_on "Mentions"
@@ -51,6 +61,9 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
       assert page.has_content?("You've been mentioned")
       assert page.has_css?(".tweet-card")
     end
+
+    click_on "Logout"
+    assert_equal root_path, current_path
   end
 
 end

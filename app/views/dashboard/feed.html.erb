@@ -24,7 +24,7 @@
       <span> <%= tweet.text %> <br><br>
       <strong>- <%= tweet.user.name %></strong></span>
       <!-- <%= image_tag('fullheart.png', class: "favorited") %> -->
-      <%= link_to(image_tag("fullheart.png"), posts_favorite_path(id: tweet.id), remote: true, class: "favorite", method: :post) %>
+      <%= link_to(image_tag("fullheart.png"), posts_favorite_path(id: tweet.id), remote: true, class: "favorite", id: "favorite", method: :post) %>
       <%= button_to "Retweet", posts_retweet_path(id: tweet.id), :remote => true, class: "btn btn-lg btn-default btn-home retweet" %>
       <!-- <%= button_to "un-Retweet", posts_retweet_path(id: tweet.id), :remote => true, class: "btn btn-lg btn-default btn-home retweeted", style: "display:none" %> -->
     </div>
