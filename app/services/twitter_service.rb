@@ -42,6 +42,10 @@ class TwitterService
     client.retweet(tweet)
   end
 
+  def favorite(tweet)
+    client.favorite!(tweet)
+  end
+
   # def retweets_of(id)
   #   client.retweets(id)
   # end

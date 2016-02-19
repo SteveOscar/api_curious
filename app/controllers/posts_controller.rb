@@ -5,7 +5,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    byebug
     TwitterService.new(current_user).tweet(params["q"])
     redirect_to dashboard_path
   end
@@ -18,8 +17,8 @@ class PostsController < ApplicationController
     end
   end
 
-  def unretweet
-    TwitterService.new(current_user).retweets_of(params[:id])
+  def favorite
+    TwitterService.new(current_user).favorite(params[:id])
     respond_to do |format|
       format.html {redirect_to :back}
       format.js

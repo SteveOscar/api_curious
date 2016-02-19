@@ -29,29 +29,36 @@ $(document).ready(function(){
   $('.circle2').delay( 1200 ).fadeTo('slow', 0.6);
   $('.circle3').delay( 1400 ).fadeTo('slow', 0.7);
 
+  // Animates the background bird
+  function loop() {
+      $('.bird').css({left:0});
+      $('.bird').animate ({
+          left: '+=800',
+      }, 10000, 'linear', function() {
+      });
+  }
+  loop();
+
   // Fades in/out the name and bio on the dashboard
   $('.hi').delay( 1300 ).fadeTo('slow', 0, function(){
     $('.hi').remove();
   });
   $('.bio').delay( 2300 ).fadeTo('slow', 1);
 
-  $('.blurb').delay( 1800 ).fadeTo('slow', 0, function(){
+  $('.blurb').delay( 1500 ).fadeTo('slow', 0, function(){
     $('.blurb').remove();
   });
 
   // The list of tweets
-  $('.pillar').delay( 2000 ).fadeTo('slow', 1);
+  $('.pillar').delay( 2100 ).fadeTo('slow', 1);
 
-  $("#scroller").simplyScroll({
-    customClass: 'vert',
-    orientation: 'vertical',
-    direction: 'backwards',
-    frameRate: 25
-  });
-
+  // Retweet and like button behavior
   $('.retweet').click(function() {
       $(this).hide();
       $(".retweeted").show();
+  });
+  $('.favorite').click(function() {
+      $(this).fadeTo('slow', 1);
   });
 
 });

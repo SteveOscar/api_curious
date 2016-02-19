@@ -8,9 +8,10 @@ body {
   background-color: #1B3C59
 }
 .bird {
-  position: absolute;
-  left: 0%;
-  top: 20%;
+  position:absolute;
+  z-index:0;
+  right:0px;
+  top:10px;
   opacity: 0;
 }
 .container-home {
@@ -138,12 +139,17 @@ li.tweet {
 }
 .tweet-card {
   margin: 15px;
-  padding: 30px;
+  padding: 15px;
   width: 500px;
   background-color: rgba(244, 245, 228, 0.88);
   opacity: .9;
   border-radius: 15px;
 }
+.tweet-image{
+  height: 50px;
+  float: left;
+}
+
 span{
   color: black;
 }
@@ -151,6 +157,18 @@ span{
 // FEED
 a.btn.btn-lg.btn-default.btn-home.retweeted{
   display: none;
+}
+.favorite{
+  opacity: .3;
+  transform: scale(.5);
+  float: right;
+}
+.retweet{
+  float: left;
+  background: #1B3C59;
+  color: white;
+  font-weight: 100;
+      margin-top: 20px;
 }
 
 // DASHBOARD

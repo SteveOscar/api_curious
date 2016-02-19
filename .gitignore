@@ -9,6 +9,7 @@
 .byebug_history
 .DS_Store
 /test/fixtures/users.yml
+coverage
 
 # Ignore all logfiles and tempfiles.
 /log/*

@@ -23,8 +23,8 @@ class ActiveSupport::TestCase
                         'image' => 'http://pbs.twimg.com/profile_images/676288331215335424/xFUgQmzk_normal.jpg'
                     },
                     'credentials' => {
-                        'token' => '3767014753-pzD4G6hhmyH0dHEBNODBJrQqhYHbG0WCl2QRxEc',
-                        'secret' => 'uFPYL5mO17PK5IDtBvvEVRH1H5YmC99XF2eGlmoJmTRUE'
+                        'token' => ENV['USER_TOKEN'],
+                        'secret' => ENV['USER_SECRET']
                     }
   }
 
