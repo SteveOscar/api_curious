@@ -7,7 +7,13 @@
 body {
   background-color: #1B3C59
 }
-
+.bird {
+  position:absolute;
+  z-index:0;
+  right:0px;
+  top:10px;
+  opacity: 0;
+}
 .container-home {
   background-color: #1B3C59;
   min-height: 90vh;
@@ -101,8 +107,24 @@ a.btn.btn-lg.btn-default.btn-home:hover {
 
 img.img-circle.img-thumbnail.home-image {
   width: 20%;
-  max-width: 200px;
+  max-width: 180px;
   min-width: 100px;
+}
+.stats {
+  position: absolute;
+  top: 7px;
+  left: 230px;
+  margin: 4px;
+  font-size: 12px;
+  color: white;
+}
+.stats2 {
+  position: absolute;
+  top: 7px;
+  left: 150px;
+  margin: 4px;
+  font-size: 12px;
+  color: white;
 }
 
 // TWEETS
@@ -116,27 +138,61 @@ li.tweet {
   font-size: 60;
 }
 .tweet-card {
-  margin: 20px;
-  padding: 20px;
-  border-color: #C7FF0E;
-  width: 400px;
-  background-color: white;
-  opacity: .8;
-  border-width: 2px;
-  border-style: solid;
+  margin: 15px;
+  padding: 15px;
+  width: 500px;
+  background-color: rgba(244, 245, 228, 0.88);
+  opacity: .9;
+  border-radius: 15px;
+}
+.tweet-image{
+  height: 50px;
+  float: left;
+}
+
+span{
+  color: black;
+}
+
+// FEED
+a.btn.btn-lg.btn-default.btn-home.retweeted{
+  display: none;
+}
+.favorite{
+  opacity: .3;
+  transform: scale(.5);
+  float: right;
+}
+.retweet{
+  float: left;
+  background: #1B3C59;
+  color: white;
+  font-weight: 100;
+      margin-top: 20px;
 }
 
 // DASHBOARD
 .intro {
-  position: absolute;
+  text-align: -webkit-center;
+  max-width: 900px;
+  min-width: 400px;
+  margin: 0 auto;
 }
-.header {
+h2.home.bio {
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+h2.header {
   color: #F8BB44;
   opacity: .85;
 }
 .pillar {
   width: 500px;
   opacity: 0;
+  display: block;
+  padding-top: 20px;
+  text-align: -webkit-center;
 }
 a.btn.btn-lg.btn-default.btn-dash {
   background-color: transparent;
@@ -154,4 +210,21 @@ a.btn.btn-lg.btn-default.btn-dash:hover {
   font-weight: 200;
   border-color: transparent;
   margin: 8px;
+}
+.tweet-form {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.small-text{
+  font-size: 20px;
+  color: #F8BB44;
+  font-weight: 100;
+}
+.tweet-bird {
+  height: 80px;
+}
+.tweet-bird:hover {
+  height: 90px;
 }

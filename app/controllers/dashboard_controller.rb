@@ -1,7 +1,8 @@
 class DashboardController < ApplicationController
   def show
-    # @feed = user_feed
-    @feed = TwitterService.new(current_user).user_feed
+    service = TwitterService.new(current_user)
+    @followers ||= service.followers.count
+    @friends ||= service.friends.count
   end
 
   def feed

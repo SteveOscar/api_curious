@@ -10,30 +10,12 @@ class ApplicationController < ActionController::Base
 
   def img_url(tweet)
     data = JSON.parse(tweet.to_json).to_h
-    data["quoted_status"]["user"]["profile_image_url"]
+    if data["quoted_status"].nil?
+      url = data["user"]["profile_image_url_https"]
+    else
+      url = data["quoted_status"]["user"]["profile_image_url_https"]
+    end
+    url
   end
 
-  # def user_tweets
-  #   t = TwitterService.new(current_user)
-  #   results = t.client.user_timeline[0..19]
-  #   tweets = []
-  #   results.each do |tweet, i|
-  #     tweets << tweet.text
-  #   end
-  #   tweets
-  # end
-
-  # def user_feed
-  #   t = TwitterService.new(current_user)
-  #   results = t.client.home_timeline
-  #   tweets = []
-  #   results.each do |tweet, i|
-  #     tweets << tweet
-  #   end
-  #   tweets
-  # end
-
-  def tweet_card_data(tweet)
-
-  end
 end

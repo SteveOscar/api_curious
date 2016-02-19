@@ -13,13 +13,12 @@ gem 'omniauth-twitter'
 gem 'twitter'
 gem 'simplyscroll-rails'
 gem 'hurley'
+gem 'responders', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
   gem 'launchy'
-  gem 'database_cleaner'
-  gem 'faraday'
 end
 
 group :development do
@@ -30,5 +29,10 @@ end
 
 group :test do
   gem 'vcr'
+  gem "minitest-vcr"
   gem 'webmock'
+  gem 'guard', '~> 2.13'
+  gem 'minitest-rails'
+  gem 'simplecov', :require => false
+  gem 'mocha'
 end

@@ -1,23 +1,29 @@
+<%= image_tag('bird.png', class: "bird") %>
 <%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %>
 <%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home fades1", method: :delete %>
-<!-- <%= link_to "Your Posts", posts_path, class: "btn btn-lg btn-default btn-home" %> -->
 <%= link_to "Dashboard", dashboard_path, class: "btn btn-lg btn-default btn-home fades2" %>
 
-<div class="container-fluid container">
-  <div class="col-md-8 intro">
-    <h1 class="home hi">Other Birds</h1>
-    <h2 class="home bio">Singing your song...</h2>
-  </div>
+<div class="intro">
+  <h1 class="home hi">You're Echoing Tweets</h1>
 </div>
 
 <div class="pillar container">
-  <div class="header">
-    <h2>Mentions</h2>
+
+  <div class="container-fluid container">
+    <div class="col-md-8 intro">
+      <h2 class="home bio">Singing your song...</h2>
+    </div>
   </div>
+
+  <div>
+    <h2 class="header home">Mentions</h2>
+  </div>
+
   <% @feed.each do |tweet| %>
     <div class="row tweet-card">
-      <%= image_tag img_url(tweet), class: "img-circle img-thumbnail home-image" %>
+      <%= image_tag img_url(tweet), class: "img-circle img-thumbnail tweet-image" %>
       <span> <%= tweet.text %> <br> - <%= tweet.quoted_status.user.name %> </span>
     </div>
   <% end %>
+
 </div>

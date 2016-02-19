@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/update.json
+    body:
+      encoding: UTF-8
+      string: status
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.16.0
+      Authorization:
+      - OAuth oauth_consumer_key="CvmUuSJHUj9yAALQILJotUejB", oauth_nonce="a5d16a9cdbba3d4abc39c5ae1f5973dd",
+        oauth_signature="TBdyGtknazylvpCEPQTkhbHATJY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1455832093", oauth_token="3767014753-pzD4G6hhmyH0dHEBNODBJrQqhYHbG0WCl2QRxEc",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '98'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 18 Feb 2016 21:48:13 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 18 Feb 2016 21:48:13 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145583209395822798; Domain=.twitter.com; Path=/; Expires=Sat,
+        17-Feb-2018 21:48:13 UTC
+      - lang=en; Path=/
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - b29a6d9dd579a883a6358cab78235399
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '15'
+      X-Transaction:
+      - 7af99f11b490fa36
+      X-Tsa-Request-Body-Time:
+      - '1'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"code":170,"message":"Missing required parameter: status."}]}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 21:48:14 GMT
+recorded_with: VCR 3.0.1

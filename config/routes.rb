@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  resources :posts
 
+  post '/posts/retweet', to: 'posts#retweet'
+  post '/posts/favorite', to: 'posts#favorite'
   get '/retweeted', to: 'dashboard#retweeted'
   get 'mentions', to: 'dashboard#mentions'
   get '/feed', to: 'dashboard#feed'
-  get '/posts', to: 'posts#index'
+  # get '/posts', to: 'posts#index'
   get '/auth/twitter', as: :login
 
   get  '/dashboard', to: 'dashboard#show'

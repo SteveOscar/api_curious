@@ -15,34 +15,38 @@ class TwitterService
   end
 
   def user_tweets
-    results = client.user_timeline[0..19]
-    tweets = []
-    results.each do |tweet, i|
-      tweets << tweet.text
-    end
-    tweets
+    client.user_timeline[0..19]
   end
 
   def user_feed
-    results = client.home_timeline
-    gather_tweets(results)
+    client.home_timeline
   end
 
   def user_mentions
-    results = client.mentions_timeline
-    gather_tweets(results)
+    client.mentions_timeline
   end
 
   def retweeted
-    results = client.retweets_of_me
-    gather_tweets(results)
+    client.retweets_of_me
   end
 
-  def gather_tweets(results)
-    tweets = []
-    results.each do |tweet, i|
-      tweets << tweet
-    end
-    tweets
+  def followers
+    client.followers
   end
+
+  def friends
+    client.friends
+  end
+
+  def retweet(tweet)
+    client.retweet(tweet)
+  end
+
+  def favorite(tweet)
+    client.favorite!(tweet)
+  end
+
+  # def retweets_of(id)
+  #   client.retweets(id)
+  # end
 end

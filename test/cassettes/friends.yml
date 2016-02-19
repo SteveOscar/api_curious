@@ -1,0 +1,363 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/account/verify_credentials.json?skip_status=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.16.0
+      Authorization:
+      - OAuth oauth_consumer_key="CvmUuSJHUj9yAALQILJotUejB", oauth_nonce="64d6cc3a9116386b1717f381be74adb9",
+        oauth_signature="Yj%2BcoYWzMuigGpmb4QMoWmrNj2U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1455813204", oauth_token="3767014753-pzD4G6hhmyH0dHEBNODBJrQqhYHbG0WCl2QRxEc",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '648'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 18 Feb 2016 16:33:24 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 18 Feb 2016 16:33:24 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145581320433834766; Domain=.twitter.com; Path=/; Expires=Sat,
+        17-Feb-2018 16:33:24 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 4e6709a1e59e753851f3bda9651041e5
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '13'
+      X-Rate-Limit-Reset:
+      - '1455813980'
+      X-Response-Time:
+      - '22'
+      X-Transaction:
+      - d7421f53edcbca56
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      - BouncerExempt
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":3767014753,"id_str":"3767014753","name":"Steven Olson","screen_name":"oSteveOscar","location":"Denver,
+        CO","description":"Current Turing student, photographer, traveler, former
+        commercial fisherman. Life-long cereal enthusiast.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":39,"friends_count":73,"listed_count":0,"created_at":"Sat
+        Oct 03 05:59:31 +0000 2015","favourites_count":47,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":40,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/676288331215335424\/xFUgQmzk_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/676288331215335424\/xFUgQmzk_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3767014753\/1455767878","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 16:33:24 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/friends/list.json?cursor=-1&user_id=3767014753
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.16.0
+      Authorization:
+      - OAuth oauth_consumer_key="CvmUuSJHUj9yAALQILJotUejB", oauth_nonce="4657684f1e3dca82923a3b47e1b683d5",
+        oauth_signature="cIm0E3cQSXJiOTqg%2FfGWOJKfnsA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1455813204", oauth_token="3767014753-pzD4G6hhmyH0dHEBNODBJrQqhYHbG0WCl2QRxEc",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '9405'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 18 Feb 2016 16:33:25 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 18 Feb 2016 16:33:25 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145581320512169852; Domain=.twitter.com; Path=/; Expires=Sat,
+        17-Feb-2018 16:33:25 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 2a24a784998a1b41dd398e6f01b34733
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1455814105'
+      X-Response-Time:
+      - '86'
+      X-Transaction:
+      - d433f2278f584035
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"users":[{"id":167486448,"id_str":"167486448","name":"David Stinnette","screen_name":"dastinnette","location":"Colorado","description":"Boilermaker,
+        globetrotter, Cubs apologist | Earning my green belt in software development
+        @turingschool | Go play outside","url":"https:\/\/t.co\/7sqkSSbVhw","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/7sqkSSbVhw","expanded_url":"http:\/\/dastinnette.github.io","display_url":"dastinnette.github.io","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":417,"friends_count":45,"listed_count":9,"created_at":"Fri
+        Jul 16 18:25:49 +0000 2010","favourites_count":54,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":1472,"lang":"en","status":{"created_at":"Wed
+        Feb 17 19:29:51 +0000 2016","id":700039475615772673,"id_str":"700039475615772673","text":"@j3
+        if you''re enrolling in a software program, might as well go with the most
+        rigorous. That choice has consequences for some.","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":700038807945502720,"in_reply_to_status_id_str":"700038807945502720","in_reply_to_user_id":167486448,"in_reply_to_user_id_str":"167486448","in_reply_to_screen_name":"dastinnette","geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":3,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"j3","name":"Jeff
+        Casimir","id":1133971,"id_str":"1133971","indices":[0,3]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"022330","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/619286452308828160\/QtJOFBDF_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/619286452308828160\/QtJOFBDF_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/167486448\/1398292642","profile_link_color":"0084B4","profile_sidebar_border_color":"A8C7F7","profile_sidebar_fill_color":"C0DFEC","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":14902698,"id_str":"14902698","name":"ian
+        douglas","screen_name":"iandouglas736","location":"","description":"Ignoring
+        Q-Tip warnings since 1974. DirEng at @SimpleEnergy, but these opinions are
+        mine. Mostly cross-post from Google+ http:\/\/t.co\/cDv6mvC95C","url":"http:\/\/t.co\/Uxprgupiuo","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/Uxprgupiuo","expanded_url":"http:\/\/iandouglas.com","display_url":"iandouglas.com","indices":[0,22]}]},"description":{"urls":[{"url":"http:\/\/t.co\/cDv6mvC95C","expanded_url":"http:\/\/gplus.to\/iandouglas","display_url":"gplus.to\/iandouglas","indices":[121,143]}]}},"protected":false,"followers_count":656,"friends_count":384,"listed_count":31,"created_at":"Sun
+        May 25 23:00:26 +0000 2008","favourites_count":2187,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":5716,"lang":"en","status":{"created_at":"Wed
+        Feb 17 22:47:06 +0000 2016","id":700089114108915712,"id_str":"700089114108915712","text":"RT
+        @jorgesd: I wanted to call our band The Misophoniacs, but nobody seemed to...OMG
+        STOP CHEWING WITH YOUR MOUTH OPEN!!!","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        Feb 17 21:53:45 +0000 2016","id":700075690222186496,"id_str":"700075690222186496","text":"I
+        wanted to call our band The Misophoniacs, but nobody seemed to...OMG STOP
+        CHEWING WITH YOUR MOUTH OPEN!!!","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":2,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"is_quote_status":false,"retweet_count":1,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"jorgesd","name":"Jorge
+        Vel\u00e1zquez","id":15418669,"id_str":"15418669","indices":[3,11]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C6E2EE","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/265786406\/nvdefianceofscience.br.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/265786406\/nvdefianceofscience.br.jpg","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/507037063296729089\/f09JKA3T_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/507037063296729089\/f09JKA3T_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/14902698\/1398454585","profile_link_color":"1F98C7","profile_sidebar_border_color":"C6E2EE","profile_sidebar_fill_color":"DAECF4","profile_text_color":"663B12","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":2359775539,"id_str":"2359775539","name":"Mimi
+        Schatz","screen_name":"schatz_mc","location":"Boulder, CO","description":"@Turingschool
+        aluma, looking to adult again: https:\/\/t.co\/S2LEs1JL4Z, Witty banter is
+        the spice of life","url":null,"entities":{"description":{"urls":[{"url":"https:\/\/t.co\/S2LEs1JL4Z","expanded_url":"http:\/\/bit.ly\/1lQmSS8","display_url":"bit.ly\/1lQmSS8","indices":[45,68]}]}},"protected":false,"followers_count":108,"friends_count":140,"listed_count":3,"created_at":"Mon
+        Feb 24 16:51:28 +0000 2014","favourites_count":70,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":53,"lang":"en","status":{"created_at":"Sun
+        Feb 14 19:25:45 +0000 2016","id":698951278605406208,"id_str":"698951278605406208","text":"RT
+        @ConanOBrien: If you can say Happy Valentine''s Day in Klingon you''re probably
+        not celebrating it.","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\"
+        rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Sun
+        Feb 14 18:35:26 +0000 2016","id":698938616626749444,"id_str":"698938616626749444","text":"If
+        you can say Happy Valentine''s Day in Klingon you''re probably not celebrating
+        it.","source":"\u003ca href=\"http:\/\/www.hootsuite.com\" rel=\"nofollow\"\u003eHootsuite\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":2388,"favorite_count":4896,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"is_quote_status":false,"retweet_count":2388,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"ConanOBrien","name":"Conan
+        O''Brien","id":115485051,"id_str":"115485051","indices":[3,15]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/438007942072115200\/xpOw9rvx_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/438007942072115200\/xpOw9rvx_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2359775539\/1393277309","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":67410732,"id_str":"67410732","name":"joshua
+        jhun","screen_name":"joshuajhun","location":"Denver, Colorado","description":"Husband.
+        Web Developer. Student at Turing.io. Lover of Jesus.","url":"http:\/\/t.co\/JyJuyUFYJ2","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/JyJuyUFYJ2","expanded_url":"http:\/\/www.facebook.com\/joshuajhun","display_url":"facebook.com\/joshuajhun","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":244,"friends_count":109,"listed_count":27,"created_at":"Thu
+        Aug 20 20:10:22 +0000 2009","favourites_count":113,"utc_offset":-28800,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":1536,"lang":"en","status":{"created_at":"Wed
+        Feb 17 18:58:16 +0000 2016","id":700031525077651456,"id_str":"700031525077651456","text":"RT
+        @j3: Why is @turingschool\u2019s graduation rate 25% lower than other programs?
+        Theories: https:\/\/t.co\/PdJYFPNvlU","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        Feb 17 18:57:52 +0000 2016","id":700031426792546304,"id_str":"700031426792546304","text":"Why
+        is @turingschool\u2019s graduation rate 25% lower than other programs? Theories:
+        https:\/\/t.co\/PdJYFPNvlU","source":"\u003ca href=\"http:\/\/tapbots.com\/software\/tweetbot\/mac\"
+        rel=\"nofollow\"\u003eTweetbot for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":{"id":"460b8a5f636e7c9e","url":"https:\/\/api.twitter.com\/1.1\/geo\/id\/460b8a5f636e7c9e.json","place_type":"neighborhood","name":"Union
+        Station","full_name":"Union Station, Denver","country_code":"US","country":"United
+        States","contained_within":[],"bounding_box":{"type":"Polygon","coordinates":[[[-105.008219,39.7455573],[-104.991716,39.7455573],[-104.991716,39.760381],[-105.008219,39.760381]]]},"attributes":{}},"contributors":null,"is_quote_status":false,"retweet_count":21,"favorite_count":40,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"turingschool","name":"Turing
+        School","id":1973042528,"id_str":"1973042528","indices":[7,20]}],"urls":[{"url":"https:\/\/t.co\/PdJYFPNvlU","expanded_url":"https:\/\/gist.github.com\/jcasimir\/c52ddccb5b527e1bba87","display_url":"gist.github.com\/jcasimir\/c52dd\u2026","indices":[80,103]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":21,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"j3","name":"Jeff
+        Casimir","id":1133971,"id_str":"1133971","indices":[3,6]},{"screen_name":"turingschool","name":"Turing
+        School","id":1973042528,"id_str":"1973042528","indices":[15,28]}],"urls":[{"url":"https:\/\/t.co\/PdJYFPNvlU","expanded_url":"https:\/\/gist.github.com\/jcasimir\/c52ddccb5b527e1bba87","display_url":"gist.github.com\/jcasimir\/c52dd\u2026","indices":[88,111]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"0C0E09","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/263251896\/twitter.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/263251896\/twitter.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/685610356807344129\/hODP4hiz_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/685610356807344129\/hODP4hiz_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/67410732\/1448256735","profile_link_color":"ABB8C2","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"C7BBBB","profile_text_color":"4D4545","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":1861520917,"id_str":"1861520917","name":"George
+        Hudson","screen_name":"GeorgeHudson78","location":"","description":"Writer
+        (code and prose), Colorado Air National Guard, Father to awesome twin girls!","url":"https:\/\/t.co\/cLdgLqiV9D","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/cLdgLqiV9D","expanded_url":"http:\/\/turingwithgeorge.tumblr.com\/","display_url":"turingwithgeorge.tumblr.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":64,"friends_count":74,"listed_count":3,"created_at":"Fri
+        Sep 13 19:22:50 +0000 2013","favourites_count":34,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":63,"lang":"en","status":{"created_at":"Fri
+        Jan 29 17:43:57 +0000 2016","id":693127454257319940,"id_str":"693127454257319940","text":"2nd
+        iteration of Kids Who Code starting tomorrow at @turingschool using MIT''s
+        App Inventor https:\/\/t.co\/R7E6hszj1B (limit 16 kids)","source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"turingschool","name":"Turing
+        School","id":1973042528,"id_str":"1973042528","indices":[52,65]}],"urls":[{"url":"https:\/\/t.co\/R7E6hszj1B","expanded_url":"http:\/\/www.meetup.com\/Turing-Community-Events\/events\/227833398\/?rv=cr1&_af=event&_af_eid=227833398&https=off","display_url":"meetup.com\/Turing-Communi\u2026","indices":[91,114]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000452751997\/a03a01538457ae0d4e30b828a9ee27d0_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000452751997\/a03a01538457ae0d4e30b828a9ee27d0_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/1861520917\/1379102576","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":3002594324,"id_str":"3002594324","name":"Lydia","screen_name":"Lydias303","location":"Denver,
+        CO","description":"Software Developer | Turing Alumni","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":158,"friends_count":266,"listed_count":2,"created_at":"Thu
+        Jan 29 23:17:10 +0000 2015","favourites_count":504,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":103,"lang":"en","status":{"created_at":"Sun
+        Feb 14 19:07:44 +0000 2016","id":698946746748051456,"id_str":"698946746748051456","text":"Just
+        saw a Denver PD driving around smoking a cigar... #isthatathing","source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[{"text":"isthatathing","indices":[55,68]}],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/695069001920065536\/3rQ1j1v__normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/695069001920065536\/3rQ1j1v__normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3002594324\/1448387632","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":2870601471,"id_str":"2870601471","name":"Emily
+        Blanchard","screen_name":"Emblou2","location":"Denver, CO","description":"Lover
+        of water in all of it''s forms. Life would be so boring if we were all the
+        same.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":166,"friends_count":161,"listed_count":3,"created_at":"Mon
+        Nov 10 14:24:29 +0000 2014","favourites_count":174,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":207,"lang":"en","status":{"created_at":"Mon
+        Jan 11 22:08:56 +0000 2016","id":686671159841062912,"id_str":"686671159841062912","text":"Thinking
+        of 5 a.m. brook trout quests from a row boat. https:\/\/t.co\/1IsklY912c","source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":2,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[],"media":[{"id":686671159719428096,"id_str":"686671159719428096","indices":[55,78],"media_url":"http:\/\/pbs.twimg.com\/media\/CYeLyBiVAAAJTKW.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/CYeLyBiVAAAJTKW.jpg","url":"https:\/\/t.co\/1IsklY912c","display_url":"pic.twitter.com\/1IsklY912c","expanded_url":"http:\/\/twitter.com\/Emblou2\/status\/686671159841062912\/photo\/1","type":"photo","sizes":{"large":{"w":1024,"h":768,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":600,"h":450,"resize":"fit"},"small":{"w":340,"h":255,"resize":"fit"}}}]},"extended_entities":{"media":[{"id":686671159719428096,"id_str":"686671159719428096","indices":[55,78],"media_url":"http:\/\/pbs.twimg.com\/media\/CYeLyBiVAAAJTKW.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/CYeLyBiVAAAJTKW.jpg","url":"https:\/\/t.co\/1IsklY912c","display_url":"pic.twitter.com\/1IsklY912c","expanded_url":"http:\/\/twitter.com\/Emblou2\/status\/686671159841062912\/photo\/1","type":"photo","sizes":{"large":{"w":1024,"h":768,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":600,"h":450,"resize":"fit"},"small":{"w":340,"h":255,"resize":"fit"}}}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/583665392117100545\/gHOBt2oD_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/583665392117100545\/gHOBt2oD_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2870601471\/1427991721","profile_link_color":"3B94D9","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":2053151,"id_str":"2053151","name":"Rosie
+        Kohn","screen_name":"kohniva","location":"Denver, CO","description":"associate
+        software engineer at @welltok graduate from @turingschool","url":"http:\/\/t.co\/Qo4nVSvw5M","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/Qo4nVSvw5M","expanded_url":"http:\/\/rosekohn.com","display_url":"rosekohn.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":284,"friends_count":161,"listed_count":6,"created_at":"Fri
+        Mar 23 21:04:26 +0000 2007","favourites_count":170,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":false,"statuses_count":722,"lang":"en","status":{"created_at":"Thu
+        Feb 18 14:09:05 +0000 2016","id":700321139407454208,"id_str":"700321139407454208","text":"RT
+        @j3: Why is @turingschool\u2019s graduation rate 25% lower than other programs?
+        Theories: https:\/\/t.co\/PdJYFPNvlU","source":"\u003ca href=\"http:\/\/twitter.com\/download\/android\"
+        rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        Feb 17 18:57:52 +0000 2016","id":700031426792546304,"id_str":"700031426792546304","text":"Why
+        is @turingschool\u2019s graduation rate 25% lower than other programs? Theories:
+        https:\/\/t.co\/PdJYFPNvlU","source":"\u003ca href=\"http:\/\/tapbots.com\/software\/tweetbot\/mac\"
+        rel=\"nofollow\"\u003eTweetbot for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":{"id":"460b8a5f636e7c9e","url":"https:\/\/api.twitter.com\/1.1\/geo\/id\/460b8a5f636e7c9e.json","place_type":"neighborhood","name":"Union
+        Station","full_name":"Union Station, Denver","country_code":"US","country":"United
+        States","contained_within":[],"bounding_box":{"type":"Polygon","coordinates":[[[-105.008219,39.7455573],[-104.991716,39.7455573],[-104.991716,39.760381],[-105.008219,39.760381]]]},"attributes":{}},"contributors":null,"is_quote_status":false,"retweet_count":21,"favorite_count":40,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"turingschool","name":"Turing
+        School","id":1973042528,"id_str":"1973042528","indices":[7,20]}],"urls":[{"url":"https:\/\/t.co\/PdJYFPNvlU","expanded_url":"https:\/\/gist.github.com\/jcasimir\/c52ddccb5b527e1bba87","display_url":"gist.github.com\/jcasimir\/c52dd\u2026","indices":[80,103]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":21,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"j3","name":"Jeff
+        Casimir","id":1133971,"id_str":"1133971","indices":[3,6]},{"screen_name":"turingschool","name":"Turing
+        School","id":1973042528,"id_str":"1973042528","indices":[15,28]}],"urls":[{"url":"https:\/\/t.co\/PdJYFPNvlU","expanded_url":"https:\/\/gist.github.com\/jcasimir\/c52ddccb5b527e1bba87","display_url":"gist.github.com\/jcasimir\/c52dd\u2026","indices":[88,111]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"131516","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/642390668745162752\/aP-5gXIZ_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/642390668745162752\/aP-5gXIZ_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2053151\/1455565997","profile_link_color":"009999","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"EFEFEF","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":499056474,"id_str":"499056474","name":"Orion
+        Osborn","screen_name":"oorion_","location":"Denver, CO","description":"Developer","url":"http:\/\/t.co\/WNina7cyx7","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/WNina7cyx7","expanded_url":"http:\/\/oorion.net","display_url":"oorion.net","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":118,"friends_count":217,"listed_count":1,"created_at":"Tue
+        Feb 21 18:37:52 +0000 2012","favourites_count":21,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":83,"lang":"en","status":{"created_at":"Fri
+        Feb 12 04:56:54 +0000 2016","id":698007852015755265,"id_str":"698007852015755265","text":"RT
+        @BernieSanders: Only one candidate has laid out exactly how to pay for all
+        of their proposals. Hint: it''s on this site: https:\/\/t.co\/zVt\u2026","source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Fri
+        Feb 12 02:22:58 +0000 2016","id":697969112945971200,"id_str":"697969112945971200","text":"Only
+        one candidate has laid out exactly how to pay for all of their proposals.
+        Hint: it''s on this site: https:\/\/t.co\/zVtaKCxObf #DemDebate","source":"\u003ca
+        href=\"https:\/\/about.twitter.com\/products\/tweetdeck\" rel=\"nofollow\"\u003eTweetDeck\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":2294,"favorite_count":2998,"entities":{"hashtags":[{"text":"DemDebate","indices":[128,138]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/zVtaKCxObf","expanded_url":"https:\/\/berniesanders.com\/issues\/how-bernie-pays-for-his-proposals\/","display_url":"berniesanders.com\/issues\/how-ber\u2026","indices":[104,127]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":2294,"favorite_count":0,"entities":{"hashtags":[{"text":"DemDebate","indices":[139,140]}],"symbols":[],"user_mentions":[{"screen_name":"BernieSanders","name":"Bernie
+        Sanders","id":216776631,"id_str":"216776631","indices":[3,17]}],"urls":[{"url":"https:\/\/t.co\/zVtaKCxObf","expanded_url":"https:\/\/berniesanders.com\/issues\/how-bernie-pays-for-his-proposals\/","display_url":"berniesanders.com\/issues\/how-ber\u2026","indices":[123,140]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/577485048229707776\/nSLncBOs_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/577485048229707776\/nSLncBOs_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":104061790,"id_str":"104061790","name":"Josh
+        Mejia","screen_name":"joshuamejia","location":"Denver, CO","description":"@TuringSchool
+        Instructor. Maker of things using the web, Ruby, opposable thumbs, and sound.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":340,"friends_count":309,"listed_count":19,"created_at":"Tue
+        Jan 12 03:57:22 +0000 2010","favourites_count":339,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":815,"lang":"en","status":{"created_at":"Sat
+        Feb 13 04:39:51 +0000 2016","id":698365946080026624,"id_str":"698365946080026624","text":"@stevekinney
+        Backstage will be filled with electronic smoke and the hum of e cig chargers.","source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":698352357801734148,"in_reply_to_status_id_str":"698352357801734148","in_reply_to_user_id":2118841,"in_reply_to_user_id_str":"2118841","in_reply_to_screen_name":"stevekinney","geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"stevekinney","name":"Steve
+        Kinney","id":2118841,"id_str":"2118841","indices":[0,12]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/548068847677231104\/WPu1nCfp_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/548068847677231104\/WPu1nCfp_normal.jpeg","profile_link_color":"89C9FA","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":317905240,"id_str":"317905240","name":"Bree","screen_name":"BreeThomas33","location":"Denver,
+        CO","description":"Programmer, Recovering Marketer, Mother, sometimes Author.
+        Co-Founder The Aha Method. Co-Writer http:\/\/t.co\/MmEOEpSBQn","url":"http:\/\/t.co\/4k8OK4jhOC","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/4k8OK4jhOC","expanded_url":"http:\/\/www.nooblife.com\/","display_url":"nooblife.com","indices":[0,22]}]},"description":{"urls":[{"url":"http:\/\/t.co\/MmEOEpSBQn","expanded_url":"http:\/\/www.thebratblog.com\/","display_url":"thebratblog.com","indices":[96,118]}]}},"protected":false,"followers_count":627,"friends_count":167,"listed_count":46,"created_at":"Wed
+        Jun 15 17:17:59 +0000 2011","favourites_count":138,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":395,"lang":"en","status":{"created_at":"Tue
+        Feb 16 19:05:50 +0000 2016","id":699671040914378752,"id_str":"699671040914378752","text":"Intro
+        to HTML\/CSS class Feb 27 w\/ Girl Develop It in Denver! https:\/\/t.co\/vWwK2dvVw1
+        Sign up and join the fun!","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\"
+        rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":2,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/vWwK2dvVw1","expanded_url":"http:\/\/bit.ly\/1Vkwjoj","display_url":"bit.ly\/1Vkwjoj","indices":[61,84]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"131516","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1397362310\/Bree3_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1397362310\/Bree3_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/317905240\/1398399257","profile_link_color":"009999","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"EFEFEF","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":65148180,"id_str":"65148180","name":"Josh
+        Cheek","screen_name":"josh_cheek","location":"Denver, CO","description":"Embrace
+        chaos.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":971,"friends_count":346,"listed_count":59,"created_at":"Wed
+        Aug 12 20:20:43 +0000 2009","favourites_count":3583,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":11959,"lang":"en","status":{"created_at":"Thu
+        Feb 18 13:58:59 +0000 2016","id":700318596619223040,"id_str":"700318596619223040","text":"How
+        do you specify in a git commit that you paired with someone? (eg multiple
+        authors?) Paired w\/ @higgaion, but IDK how to encode that info","source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"higgaion","name":"Brian
+        Dunn","id":15008746,"id_str":"15008746","indices":[98,107]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"352726","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme5\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme5\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/378800000788806183\/13694fcc19dee91ca43f25cb7ceb1202_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/378800000788806183\/13694fcc19dee91ca43f25cb7ceb1202_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/65148180\/1376372837","profile_link_color":"649954","profile_sidebar_border_color":"829D5E","profile_sidebar_fill_color":"99CC33","profile_text_color":"3E4415","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":10269812,"id_str":"10269812","name":"Adam
+        Ki","screen_name":"adajensen","location":"Denver, CO","description":"Rails
+        dev. Currently @turingschool. Previously @fullcontactapp and @namedotcom","url":"https:\/\/t.co\/wtDMJALjPV","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/wtDMJALjPV","expanded_url":"http:\/\/adamki.github.io","display_url":"adamki.github.io","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":214,"friends_count":432,"listed_count":16,"created_at":"Thu
+        Nov 15 05:06:45 +0000 2007","favourites_count":454,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":349,"lang":"en","status":{"created_at":"Wed
+        Feb 17 22:50:20 +0000 2016","id":700089927732596736,"id_str":"700089927732596736","text":"@mjkirk
+        Thank you so much! It will arrive shortly!","source":"\u003ca href=\"http:\/\/twitter.com\/download\/android\"
+        rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":700084887731118080,"in_reply_to_status_id_str":"700084887731118080","in_reply_to_user_id":8236042,"in_reply_to_user_id_str":"8236042","in_reply_to_screen_name":"mjkirk","geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"mjkirk","name":"Matthew
+        Kirk","id":8236042,"id_str":"8236042","indices":[0,7]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme8\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme8\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/599776524854697984\/TYQ3p-02_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/599776524854697984\/TYQ3p-02_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/10269812\/1431832840","profile_link_color":"89C9FA","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":2236738590,"id_str":"2236738590","name":"DJ
+        Greenfield","screen_name":"AllPurposeDJ","location":"Aurora, CO","description":"@turingschool
+        grad. Web dev by day, sleep by night.","url":"http:\/\/t.co\/H8hGyWN9kV","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/H8hGyWN9kV","expanded_url":"http:\/\/www.turing.io","display_url":"turing.io","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":128,"friends_count":484,"listed_count":2,"created_at":"Sun
+        Dec 08 23:57:06 +0000 2013","favourites_count":288,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":378,"lang":"en","status":{"created_at":"Tue
+        Feb 02 16:41:23 +0000 2016","id":694561260860362752,"id_str":"694561260860362752","text":"news
+        reaches views since nobody homely @Jwan622 smells","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"Jwan622","name":"Jeffrey
+        Wan","id":392896415,"id_str":"392896415","indices":[39,47]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/452001344501456896\/vOzsD5Og_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/452001344501456896\/vOzsD5Og_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2236738590\/1396600440","profile_link_color":"0A2830","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":45583056,"id_str":"45583056","name":"Rhodiumfox","screen_name":"allieelarson","location":"New
+        York, New York","description":"Colorado adventurer turned New York explorer.
+        I write code for @bonobos, and eat a lot of breakfast food.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":239,"friends_count":308,"listed_count":6,"created_at":"Mon
+        Jun 08 15:01:39 +0000 2009","favourites_count":573,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":517,"lang":"en","status":{"created_at":"Tue
+        Feb 16 03:46:35 +0000 2016","id":699439704291147778,"id_str":"699439704291147778","text":"RT
+        @TheAtlantic: Kendrick Lamar saves the Grammys https:\/\/t.co\/tm2yEa1QHU
+        https:\/\/t.co\/QbnVFZC4bf","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\"
+        rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Tue
+        Feb 16 03:19:14 +0000 2016","id":699432823845842945,"id_str":"699432823845842945","text":"Kendrick
+        Lamar saves the Grammys https:\/\/t.co\/tm2yEa1QHU https:\/\/t.co\/QbnVFZC4bf","source":"\u003ca
+        href=\"http:\/\/www.socialflow.com\" rel=\"nofollow\"\u003eSocialFlow\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":230,"favorite_count":372,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/tm2yEa1QHU","expanded_url":"http:\/\/theatln.tc\/1Tkl4x9","display_url":"theatln.tc\/1Tkl4x9","indices":[33,56]}],"media":[{"id":699432822692581376,"id_str":"699432822692581376","indices":[57,80],"media_url":"http:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","url":"https:\/\/t.co\/QbnVFZC4bf","display_url":"pic.twitter.com\/QbnVFZC4bf","expanded_url":"http:\/\/twitter.com\/TheAtlantic\/status\/699432823845842945\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":227,"resize":"fit"},"medium":{"w":600,"h":400,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":615,"h":410,"resize":"fit"}}}]},"extended_entities":{"media":[{"id":699432822692581376,"id_str":"699432822692581376","indices":[57,80],"media_url":"http:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","url":"https:\/\/t.co\/QbnVFZC4bf","display_url":"pic.twitter.com\/QbnVFZC4bf","expanded_url":"http:\/\/twitter.com\/TheAtlantic\/status\/699432823845842945\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":227,"resize":"fit"},"medium":{"w":600,"h":400,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":615,"h":410,"resize":"fit"}}}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":230,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"TheAtlantic","name":"The
+        Atlantic","id":35773039,"id_str":"35773039","indices":[3,15]}],"urls":[{"url":"https:\/\/t.co\/tm2yEa1QHU","expanded_url":"http:\/\/theatln.tc\/1Tkl4x9","display_url":"theatln.tc\/1Tkl4x9","indices":[50,73]}],"media":[{"id":699432822692581376,"id_str":"699432822692581376","indices":[74,97],"media_url":"http:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","url":"https:\/\/t.co\/QbnVFZC4bf","display_url":"pic.twitter.com\/QbnVFZC4bf","expanded_url":"http:\/\/twitter.com\/TheAtlantic\/status\/699432823845842945\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":227,"resize":"fit"},"medium":{"w":600,"h":400,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":615,"h":410,"resize":"fit"}},"source_status_id":699432823845842945,"source_status_id_str":"699432823845842945","source_user_id":35773039,"source_user_id_str":"35773039"}]},"extended_entities":{"media":[{"id":699432822692581376,"id_str":"699432822692581376","indices":[74,97],"media_url":"http:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/CbTickzXEAA87FH.jpg","url":"https:\/\/t.co\/QbnVFZC4bf","display_url":"pic.twitter.com\/QbnVFZC4bf","expanded_url":"http:\/\/twitter.com\/TheAtlantic\/status\/699432823845842945\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":227,"resize":"fit"},"medium":{"w":600,"h":400,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":615,"h":410,"resize":"fit"}},"source_status_id":699432823845842945,"source_status_id_str":"699432823845842945","source_user_id":35773039,"source_user_id_str":"35773039"}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"709397","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme6\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme6\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/659179341981614082\/1l7GV2Ma_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/659179341981614082\/1l7GV2Ma_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/45583056\/1402882003","profile_link_color":"94D487","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FFF7CC","profile_text_color":"0C3E53","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":4920058752,"id_str":"4920058752","name":"Lin
+        Wen Ru (Harriet)","screen_name":"LinWenRu2","location":"","description":"A
+        human being for now","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":4,"friends_count":4,"listed_count":0,"created_at":"Wed
+        Feb 17 08:43:25 +0000 2016","favourites_count":1,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":2,"lang":"zh-tw","status":{"created_at":"Thu
+        Feb 18 13:11:52 +0000 2016","id":700306741494296577,"id_str":"700306741494296577","text":"Receiving
+        compliment from customer today, can''t stop smiling :)))","source":"\u003ca
+        href=\"http:\/\/twitter.com\/#!\/download\/ipad\" rel=\"nofollow\"\u003eTwitter
+        for iPad\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":true,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/699883123052400640\/H5jldDDJ_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/699883123052400640\/H5jldDDJ_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/4920058752\/1455700121","profile_link_color":"2B7BB9","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":424007918,"id_str":"424007918","name":"Marc
+        Garreau","screen_name":"omgwtfmarc","location":"Denver, CO via Orlando, FL","description":"will
+        learn for food; professional noob @quickleft; 1406 @turingschool alum; INTP;","url":"http:\/\/t.co\/mMFdqA9gjd","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/mMFdqA9gjd","expanded_url":"http:\/\/www.marcgarreau.com","display_url":"marcgarreau.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":262,"friends_count":592,"listed_count":11,"created_at":"Tue
+        Nov 29 06:20:16 +0000 2011","favourites_count":345,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":330,"lang":"en","status":{"created_at":"Wed
+        Feb 17 19:31:02 +0000 2016","id":700039770437775360,"id_str":"700039770437775360","text":"thank
+        you for having fucks left to give, @tim_cook. \n\nhttps:\/\/t.co\/mxVcOr86q2","source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"tim_cook","name":"Tim
+        Cook","id":1636590253,"id_str":"1636590253","indices":[41,50]}],"urls":[{"url":"https:\/\/t.co\/mxVcOr86q2","expanded_url":"http:\/\/www.apple.com\/customer-letter\/","display_url":"apple.com\/customer-lette\u2026","indices":[54,77]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/647803056038371332\/urWpXabW_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/647803056038371332\/urWpXabW_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/424007918\/1443283270","profile_link_color":"ABB8C2","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":3279896940,"id_str":"3279896940","name":"minnie
+        lee","screen_name":"ivegotseoul89","location":"Denver, CO","description":"Software
+        Developer @ Visa. Hip Hopper. Composer. BookWorm. DogWhisperer. N64isthebest.
+        FoodNetwork lover. Dance-Off?","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":109,"friends_count":259,"listed_count":2,"created_at":"Tue
+        Jul 14 21:11:19 +0000 2015","favourites_count":142,"utc_offset":-28800,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":72,"lang":"en","status":{"created_at":"Wed
+        Feb 17 18:29:04 +0000 2016","id":700024178024419328,"id_str":"700024178024419328","text":"@olegxgla
+        - I love it! Honestly. It was exactly what I needed to hear today. Are you
+        on soundcloud?","source":"\u003ca href=\"http:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eMobile
+        Web\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":700009473746804737,"in_reply_to_status_id_str":"700009473746804737","in_reply_to_user_id":3313011493,"in_reply_to_user_id_str":"3313011493","in_reply_to_screen_name":"olegxgla","geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"olegxgla","name":"TPW","id":3313011493,"id_str":"3313011493","indices":[0,9]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/621064771836575744\/TlnrLW5a_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/621064771836575744\/TlnrLW5a_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3279896940\/1439321086","profile_link_color":"3B94D9","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":2118841,"id_str":"2118841","name":"Steve
+        Kinney","screen_name":"stevekinney","location":"Denver, Colorado","description":"Co-Director
+        of Academics at @turingschool. Creator of @dinosaur_js. @Mozilla Fellow. Recovering
+        NYC teacher.","url":"https:\/\/t.co\/ykkFFlmLpm","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/ykkFFlmLpm","expanded_url":"http:\/\/stevekinney.net","display_url":"stevekinney.net","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":2167,"friends_count":497,"listed_count":120,"created_at":"Sat
+        Mar 24 17:21:32 +0000 2007","favourites_count":3277,"utc_offset":-25200,"time_zone":"Mountain
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":8996,"lang":"en","status":{"created_at":"Thu
+        Feb 18 02:03:29 +0000 2016","id":700138535936925696,"id_str":"700138535936925696","text":"I
+        really love my job, but context switching from one problem to the next is
+        so, so so hard and tiring.","source":"\u003ca href=\"https:\/\/mobile.twitter.com\"
+        rel=\"nofollow\"\u003eMobile Web (M5)\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":7,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"EFEBE3","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/699621405000753152\/8jKqdymY_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/699621405000753152\/8jKqdymY_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2118841\/1416536038","profile_link_color":"009999","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FFFDF8","profile_text_color":"333333","profile_use_background_image":false,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":276807953,"id_str":"276807953","name":"Lori
+        Culberson","screen_name":"irongirltx","location":"God Bless Texas!","description":"Life
+        is all about what you do with your Plan B. Lover of all things Texas, Ironman,
+        and finding the good in others.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":183,"friends_count":281,"listed_count":5,"created_at":"Mon
+        Apr 04 03:42:04 +0000 2011","favourites_count":206,"utc_offset":-21600,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":426,"lang":"en","status":{"created_at":"Fri
+        Jan 22 19:23:04 +0000 2016","id":690615681390280705,"id_str":"690615681390280705","text":"@outerim
+        I finally made a store https:\/\/t.co\/tlnexDM0qI! Big fan of bigcartel! Glad
+        I met you at @rockymtnruby!","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":6246622,"in_reply_to_user_id_str":"6246622","in_reply_to_screen_name":"outerim","geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"outerim","name":"Lee
+        Jensen","id":6246622,"id_str":"6246622","indices":[0,8]},{"screen_name":"rockymtnruby","name":"Rocky
+        Mountain Ruby","id":288454983,"id_str":"288454983","indices":[97,110]}],"urls":[{"url":"https:\/\/t.co\/tlnexDM0qI","expanded_url":"http:\/\/turingschool.bigcartel.com","display_url":"turingschool.bigcartel.com","indices":[32,55]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/654056011754438656\/t2vUGYzQ_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/654056011754438656\/t2vUGYzQ_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/276807953\/1419485895","profile_link_color":"1646A8","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false}],"next_cursor":1524695153609981630,"next_cursor_str":"1524695153609981630","previous_cursor":0,"previous_cursor_str":"0"}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 16:33:25 GMT
+recorded_with: VCR 3.0.1
