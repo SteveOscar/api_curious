@@ -46,6 +46,10 @@ class TwitterService
     client.favorite!(tweet)
   end
 
+  def unfavorite(tweet)
+    client.unfavorite(tweet)
+  end
+
   def unfollow(user)
     client.unfollow(user)
   end

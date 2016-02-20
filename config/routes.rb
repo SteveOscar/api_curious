@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post '/posts/unfollow', to: 'posts#unfollow'
   post '/posts/retweet', to: 'posts#retweet'
   post '/posts/favorite', to: 'posts#favorite'
+  post '/posts/unfavorite', to: 'posts#unfavorite'
   get '/retweeted', to: 'dashboard#retweeted'
   get 'mentions', to: 'dashboard#mentions'
   get '/feed', to: 'dashboard#feed'

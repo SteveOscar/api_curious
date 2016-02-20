@@ -43,7 +43,15 @@ $(document).ready(function(){
 
   });
   $('.favorite').click(function() {
-      $(this).fadeTo('slow', 1);
+      $(this).addClass('hidden');
+      var card = this.parent();
+      $('.unfavorite', card).removeClass('hidden');
+  });
+  $('.unfavorite').click(function() {
+      var card = this.parent();
+      $(this).addClass('hidden');
+      $('.favorite', card).removeClass('hidden');
+
   });
 
 });

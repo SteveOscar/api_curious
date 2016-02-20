@@ -163,6 +163,13 @@ a.btn.btn-lg.btn-default.btn-home.retweeted{
   transform: scale(.5);
   float: right;
 }
+.unfavorite{
+  transform: scale(.5);
+  float: right;
+}
+.hidden{
+  display: none;
+}
 .retweet{
   float: left;
   background: #1B3C59;

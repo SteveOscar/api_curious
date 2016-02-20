@@ -25,6 +25,14 @@ class PostsController < ApplicationController
     end
   end
 
+  def unfavorite
+    TwitterService.new(current_user).unfavorite(params[:id])
+    respond_to do |format|
+      format.html {redirect_to :back}
+      format.js
+    end
+  end
+
   def unfollow
     TwitterService.new(current_user).unfollow(params[:id].to_i)
     respond_to do |format|
