@@ -22,7 +22,7 @@
   <% @feed.each do |tweet| %>
     <div class="row tweet-card">
       <%= image_tag img_url(tweet), class: "img-circle img-thumbnail tweet-image" %>
-      <span> <%= tweet.text %> <br> - <%= tweet.user.name %> </span>
+      <span> <%= auto_link(tweet.text, :html => { :target => '_blank' }) %> <br> - <%= tweet.user.name %> </span>
     </div>
   <% end %>
 

@@ -14,6 +14,7 @@ gem 'twitter'
 gem 'simplyscroll-rails'
 gem 'hurley'
 gem 'responders', '~> 2.0'
+gem 'rails_autolink'
 
 group :development, :test do
   gem 'byebug'

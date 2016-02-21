@@ -42,15 +42,17 @@ $(document).ready(function(){
       $(this).fadeTo('slow', 0).hide();
 
   });
+
+
   $('.favorite').click(function() {
       $(this).addClass('hidden');
-      var card = this.parent();
-      $('.unfavorite', card).removeClass('hidden');
+      // var card = this.parent();
+      $('.unfavorite').removeClass('hidden');
   });
   $('.unfavorite').click(function() {
-      var card = this.parent();
       $(this).addClass('hidden');
-      $('.favorite', card).removeClass('hidden');
+      // var card = this.parent();
+      $('.favorite').removeClass('hidden');
 
   });
 
