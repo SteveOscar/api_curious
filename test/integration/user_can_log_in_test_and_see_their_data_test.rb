@@ -77,7 +77,7 @@ class UserCanLogInAndSeeDataTest < ActionDispatch::IntegrationTest
     VCR.use_cassette('retweets') do
       click_on "Retweets"
       assert_equal '/retweeted', current_path
-      assert page.has_content?("Retweets of you")
+      assert page.has_content?("Retweets of/by you")
       assert page.has_css?(".tweet-card")
     end
 

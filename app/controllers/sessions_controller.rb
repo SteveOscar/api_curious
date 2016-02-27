@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
 
   private
 
-  def omniath?
-    redirect_to root_path if request.env["omniauth.auth"].nil?
-  end
+    def omniath?
+      redirect_to root_path if request.env["omniauth.auth"].nil?
+    end
 end

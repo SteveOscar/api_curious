@@ -9,9 +9,7 @@ class User < ActiveRecord::Base
     user.image_url = auth['info']['image'].sub("_normal", "")
     user.token = auth['credentials']['token']
     user.secret = auth['credentials']['secret']
-
     user.save
-
     user
   end
 

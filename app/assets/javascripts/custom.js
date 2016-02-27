@@ -40,14 +40,13 @@ $(document).ready(function(){
   });
   $('.unfollow').click(function() {
       $(this).fadeTo('slow', 0).hide();
-
   });
 
 
   $('.favorite').click(function() {
+      var cardId = $(this).data('label');
+      $("a[data-label="+cardId).removeClass('hidden');
       $(this).addClass('hidden');
-      // var card = this.parent();
-      $('.unfavorite').removeClass('hidden');
   });
   $('.unfavorite').click(function() {
       $(this).addClass('hidden');

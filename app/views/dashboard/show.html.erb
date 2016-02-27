@@ -11,15 +11,16 @@
     <h2 class="home bio"> <%= current_user.bio %> </h2>
   </div>
 
-
   <div class="pillar container">
     <div>
       <h2 class="header home">Your Twitter Stats</h2>
     </div>
     <div class="row">
-      <div class="col-4sm">
-        <%= link_to "Your Posts", posts_path, class: "btn btn-lg btn-default btn-dash" %>
+      <div class="col-6sm">
         <%= link_to "Timeline", "/feed", class: "btn btn-lg btn-default btn-dash" %>
+        <%= link_to "Your Posts", posts_path, class: "btn btn-lg btn-default btn-dash" %>
+      </div>
+      <div class="row">
         <%= link_to "Mentions", '/mentions', class: "btn btn-lg btn-default btn-dash fades3" %>
         <%= link_to "Retweets", '/retweeted', class: "btn btn-lg btn-default btn-dash fades3" %>
       </div>
@@ -32,8 +33,5 @@
           <div><%= image_submit_tag('bird.png', class: "tweet-bird", id: "send-tweet") %></div>
       <% end -%>
     </div>
-
-
-
   </div>
 </div>

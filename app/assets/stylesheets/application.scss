@@ -4,8 +4,11 @@
 @import "custom";
 @import "simplyscroll";
 
+$background-color: #1B3C59;
+$button-yellow: #F8BB44;
+
 body {
-  background-color: #1B3C59
+  background-color: $background-color
 }
 .bird {
   position:absolute;
@@ -15,7 +18,7 @@ body {
   opacity: 0;
 }
 .container-home {
-  background-color: #1B3C59;
+  background-color: $background-color;
   min-height: 90vh;
   padding-top: 17vh;
   text-align: center;
@@ -29,7 +32,7 @@ body {
 
 h1.home {
   font-size: 60px;
-  color: #F8BB44;
+  color: $button-yellow;
 }
 h2.home {
   color: #5A5A8E
@@ -41,7 +44,7 @@ h2.home {
 .circle-go {
    width: 60vh;
    height: 60vh;
-   background: #F8BB44;
+   background: $button-yellow;
    border-radius: 30vh;
    position:absolute;
    left:0;
@@ -79,7 +82,7 @@ h2.home {
 .circle3 {
    width: 9vh;
    height: 9vh;
-   background: #F8BB44;
+   background: $button-yellow;
    border-radius: 8vh;
    position:absolute;
    left:19px;
@@ -95,14 +98,17 @@ a.btn.btn-lg.btn-default.btn-home.disabled {
 a.btn.btn-lg.btn-default.btn-home {
   background-color: transparent;
   border-width: 4px;
-  color: #F8BB44;
+  color: $button-yellow;
   font-weight: 100;
-  border-color: #F8BB44;
+  border-color: $button-yellow;
   margin-top: 20px;
+  font-weight: 200;
 }
 
 a.btn.btn-lg.btn-default.btn-home:hover {
-  background-color: #1B3C59;
+  background-color: white;
+  color: $background-color;
+  font-weight: 200;
 }
 
 img.img-circle.img-thumbnail.home-image {
@@ -172,7 +178,7 @@ a.btn.btn-lg.btn-default.btn-home.retweeted{
 }
 .retweet{
   float: left;
-  background: #1B3C59;
+  background: $background-color;
   color: white;
   font-weight: 100;
   margin-top: 20px;
@@ -180,7 +186,7 @@ a.btn.btn-lg.btn-default.btn-home.retweeted{
 .unfollow{
   margin-top: 20px;
   background: white;
-  color: #1B3C59;
+  color: $background-color;
   font-weight: 100;
 }
 
@@ -197,7 +203,7 @@ h2.home.bio {
   opacity: 0;
 }
 h2.header {
-  color: #F8BB44;
+  color: $button-yellow;
   opacity: .85;
 }
 .pillar {
@@ -210,7 +216,7 @@ h2.header {
 a.btn.btn-lg.btn-default.btn-dash {
   background-color: transparent;
   border-width: 3px;
-  color: #F8BB44;
+  color: $button-yellow;
   font-weight: 200;
   border-color: white;
   margin: 8px;
@@ -219,7 +225,7 @@ a.btn.btn-lg.btn-default.btn-dash {
 a.btn.btn-lg.btn-default.btn-dash:hover {
   background-color: white;
   border-width: 3px;
-  color: #1B3C59;
+  color: $background-color;
   font-weight: 200;
   border-color: transparent;
   margin: 8px;
@@ -232,7 +238,7 @@ a.btn.btn-lg.btn-default.btn-dash:hover {
 }
 .small-text{
   font-size: 20px;
-  color: #F8BB44;
+  color: $button-yellow;
   font-weight: 100;
 }
 .tweet-bird {
