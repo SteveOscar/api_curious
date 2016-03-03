@@ -11,7 +11,6 @@ gem 'figaro'
 gem 'pg'
 gem 'omniauth-twitter'
 gem 'twitter'
-gem 'hurley'
 gem 'responders', '~> 2.0'
 gem 'rails_autolink'
 gem 'rails_12factor', group: :production
