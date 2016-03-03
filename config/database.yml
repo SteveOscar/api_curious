@@ -81,5 +81,3 @@ test:
 production:
   <<: *default
   database: api_curious_production
-  username: api_curious
-  password: <%= ENV['API_CURIOUS_DATABASE_PASSWORD'] %>

@@ -11,10 +11,10 @@ gem 'figaro'
 gem 'pg'
 gem 'omniauth-twitter'
 gem 'twitter'
-gem 'simplyscroll-rails'
 gem 'hurley'
 gem 'responders', '~> 2.0'
 gem 'rails_autolink'
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
